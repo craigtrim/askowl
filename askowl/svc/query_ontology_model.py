@@ -22,13 +22,13 @@ class QueryOntologyModel(BaseObject):
 
         Created:
             25-May-2022
-            craig@grafflr.ai
-            *   https://github.com/grafflr/ask-owl/issues/1
+            craigtrim@gmail.com
+            *   https://github.com/craigtrim/askowl/issues/1
         Updated:
             27-May-2022
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   expose ability to lowercase output
-                https://github.com/grafflr/ask-owl/issues/9
+                https://github.com/craigtrim/askowl/issues/4
 
         Args:
             graph (Graph): the instantiated RDF graph

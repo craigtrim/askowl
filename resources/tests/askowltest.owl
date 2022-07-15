@@ -1,12 +1,12 @@
-@prefix : <http://graffl.ai/askowltest#> .
+@prefix : <http://craigtrim.ai/askowltest#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://graffl.ai/askowltest> .
+@base <http://craigtrim.ai/askowltest> .
 
-<http://graffl.ai/askowltest> rdf:type owl:Ontology .
+<http://craigtrim.ai/askowltest> rdf:type owl:Ontology .
 
 
 #################################################################
@@ -16,37 +16,37 @@
 #################################################################
 
 
-###  http://graffl.ai/askowltest#affects
+###  http://craigtrim.ai/askowltest#affects
 
 :affects rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/askowltest#effects
+###  http://craigtrim.ai/askowltest#effects
 
 :effects rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/askowltest#implies
+###  http://craigtrim.ai/askowltest#implies
 
 :implies rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/askowltest#locatedIn
+###  http://craigtrim.ai/askowltest#locatedIn
 
 :locatedIn rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/askowltest#meansOf
+###  http://craigtrim.ai/askowltest#meansOf
 
 :meansOf rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/askowltest#measures
+###  http://craigtrim.ai/askowltest#measures
 
 :measures rdf:type owl:AnnotationProperty ;
           
@@ -54,7 +54,7 @@
 
 
 
-###  http://graffl.ai/askowltest#nluComment
+###  http://craigtrim.ai/askowltest#nluComment
 
 :nluComment rdf:type owl:AnnotationProperty ;
             
@@ -62,25 +62,25 @@
 
 
 
-###  http://graffl.ai/askowltest#requires
+###  http://craigtrim.ai/askowltest#requires
 
 :requires rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/askowltest#similarTo
+###  http://craigtrim.ai/askowltest#similarTo
 
 :similarTo rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/askowltest#uses
+###  http://craigtrim.ai/askowltest#uses
 
 :uses rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/askowltest#worksIn
+###  http://craigtrim.ai/askowltest#worksIn
 
 :worksIn rdf:type owl:AnnotationProperty .
 
@@ -95,31 +95,31 @@
 #################################################################
 
 
-###  http://graffl.ai/askowltest#caseSensitive
+###  http://craigtrim.ai/askowltest#caseSensitive
 
 :caseSensitive rdf:type rdfs:Datatype .
 
 
 
-###  http://graffl.ai/askowltest#grafflNER
+###  http://craigtrim.ai/askowltest#grafflNER
 
 :grafflNER rdf:type rdfs:Datatype .
 
 
 
-###  http://graffl.ai/askowltest#grafflSLOT
+###  http://craigtrim.ai/askowltest#grafflSLOT
 
 :grafflSLOT rdf:type rdfs:Datatype .
 
 
 
-###  http://graffl.ai/askowltest#spacyNER
+###  http://craigtrim.ai/askowltest#spacyNER
 
 :spacyNER rdf:type rdfs:Datatype .
 
 
 
-###  http://graffl.ai/askowltest#spanDirection
+###  http://craigtrim.ai/askowltest#spanDirection
 
 :spanDirection rdf:type rdfs:Datatype .
 
@@ -134,7 +134,7 @@
 #################################################################
 
 
-###  http://graffl.ai/askowltest#Activity
+###  http://craigtrim.ai/askowltest#Activity
 
 :Activity rdf:type owl:Class ;
           
@@ -146,7 +146,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Acute_Care
+###  http://craigtrim.ai/askowltest#Acute_Care
 
 :Acute_Care rdf:type owl:Class ;
             
@@ -156,7 +156,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Admission
+###  http://craigtrim.ai/askowltest#Admission
 
 :Admission rdf:type owl:Class ;
            
@@ -166,7 +166,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Advanced_Practice_Registered_Nurse
+###  http://craigtrim.ai/askowltest#Advanced_Practice_Registered_Nurse
 
 :Advanced_Practice_Registered_Nurse rdf:type owl:Class ;
                                     
@@ -180,7 +180,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Agent
+###  http://craigtrim.ai/askowltest#Agent
 
 :Agent rdf:type owl:Class ;
        
@@ -190,7 +190,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Airport
+###  http://craigtrim.ai/askowltest#Airport
 
 :Airport rdf:type owl:Class ;
          
@@ -200,7 +200,7 @@
 
 
 
-###  http://graffl.ai/askowltest#American
+###  http://craigtrim.ai/askowltest#American
 
 :American rdf:type owl:Class ;
           
@@ -210,7 +210,7 @@
 
 
 
-###  http://graffl.ai/askowltest#American_Association_of_Colleges_of_Nursing
+###  http://craigtrim.ai/askowltest#American_Association_of_Colleges_of_Nursing
 
 :American_Association_of_Colleges_of_Nursing rdf:type owl:Class ;
                                              
@@ -222,7 +222,7 @@
 
 
 
-###  http://graffl.ai/askowltest#American_Nurses_Association
+###  http://craigtrim.ai/askowltest#American_Nurses_Association
 
 :American_Nurses_Association rdf:type owl:Class ;
                              
@@ -235,7 +235,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Apothecary
+###  http://craigtrim.ai/askowltest#Apothecary
 
 :Apothecary rdf:type owl:Class ;
             
@@ -247,7 +247,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Artifact
+###  http://craigtrim.ai/askowltest#Artifact
 
 :Artifact rdf:type owl:Class ;
           
@@ -259,7 +259,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Associates_Degree
+###  http://craigtrim.ai/askowltest#Associates_Degree
 
 :Associates_Degree rdf:type owl:Class ;
                    
@@ -272,7 +272,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Association
+###  http://craigtrim.ai/askowltest#Association
 
 :Association rdf:type owl:Class ;
              
@@ -284,7 +284,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Bachelor_of_Arts
+###  http://craigtrim.ai/askowltest#Bachelor_of_Arts
 
 :Bachelor_of_Arts rdf:type owl:Class ;
                   
@@ -294,7 +294,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Bachelor_of_Science
+###  http://craigtrim.ai/askowltest#Bachelor_of_Science
 
 :Bachelor_of_Science rdf:type owl:Class ;
                      
@@ -304,7 +304,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Bachelor_of_Science_in_Nursing
+###  http://craigtrim.ai/askowltest#Bachelor_of_Science_in_Nursing
 
 :Bachelor_of_Science_in_Nursing rdf:type owl:Class ;
                                 
@@ -316,7 +316,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Bachelors_Degree
+###  http://craigtrim.ai/askowltest#Bachelors_Degree
 
 :Bachelors_Degree rdf:type owl:Class ;
                   
@@ -329,7 +329,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Bias
+###  http://craigtrim.ai/askowltest#Bias
 
 :Bias rdf:type owl:Class ;
       
@@ -339,7 +339,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Building
+###  http://craigtrim.ai/askowltest#Building
 
 :Building rdf:type owl:Class ;
           
@@ -351,7 +351,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Cardinal
+###  http://craigtrim.ai/askowltest#Cardinal
 
 :Cardinal rdf:type owl:Class ;
           
@@ -361,7 +361,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Care_Event
+###  http://craigtrim.ai/askowltest#Care_Event
 
 :Care_Event rdf:type owl:Class ;
             
@@ -373,7 +373,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Catholic_Church
+###  http://craigtrim.ai/askowltest#Catholic_Church
 
 :Catholic_Church rdf:type owl:Class ;
                  
@@ -385,7 +385,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Century
+###  http://craigtrim.ai/askowltest#Century
 
 :Century rdf:type owl:Class ;
          
@@ -395,7 +395,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Certification
+###  http://craigtrim.ai/askowltest#Certification
 
 :Certification rdf:type owl:Class ;
                
@@ -405,7 +405,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Chemist
+###  http://craigtrim.ai/askowltest#Chemist
 
 :Chemist rdf:type owl:Class ;
          
@@ -415,7 +415,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Church
+###  http://craigtrim.ai/askowltest#Church
 
 :Church rdf:type owl:Class ;
         
@@ -425,7 +425,7 @@
 
 
 
-###  http://graffl.ai/askowltest#City
+###  http://craigtrim.ai/askowltest#City
 
 :City rdf:type owl:Class ;
       
@@ -435,7 +435,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Clinic
+###  http://craigtrim.ai/askowltest#Clinic
 
 :Clinic rdf:type owl:Class ;
         
@@ -445,7 +445,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Clinical_Competency
+###  http://craigtrim.ai/askowltest#Clinical_Competency
 
 :Clinical_Competency rdf:type owl:Class ;
                      
@@ -455,7 +455,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Clinical_Evaluation
+###  http://craigtrim.ai/askowltest#Clinical_Evaluation
 
 :Clinical_Evaluation rdf:type owl:Class ;
                      
@@ -465,7 +465,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Clinical_Outcome
+###  http://craigtrim.ai/askowltest#Clinical_Outcome
 
 :Clinical_Outcome rdf:type owl:Class ;
                   
@@ -475,7 +475,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Clinical_Outcome_Evaluation
+###  http://craigtrim.ai/askowltest#Clinical_Outcome_Evaluation
 
 :Clinical_Outcome_Evaluation rdf:type owl:Class ;
                              
@@ -487,7 +487,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Clinical_Training
+###  http://craigtrim.ai/askowltest#Clinical_Training
 
 :Clinical_Training rdf:type owl:Class ;
                    
@@ -501,7 +501,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Closure
+###  http://craigtrim.ai/askowltest#Closure
 
 :Closure rdf:type owl:Class ;
          
@@ -513,7 +513,7 @@
 
 
 
-###  http://graffl.ai/askowltest#College
+###  http://craigtrim.ai/askowltest#College
 
 :College rdf:type owl:Class ;
          
@@ -523,7 +523,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Company
+###  http://craigtrim.ai/askowltest#Company
 
 :Company rdf:type owl:Class ;
          
@@ -533,7 +533,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Competency
+###  http://craigtrim.ai/askowltest#Competency
 
 :Competency rdf:type owl:Class ;
             
@@ -543,7 +543,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Condition
+###  http://craigtrim.ai/askowltest#Condition
 
 :Condition rdf:type owl:Class ;
            
@@ -556,7 +556,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Continent
+###  http://craigtrim.ai/askowltest#Continent
 
 :Continent rdf:type owl:Class ;
            
@@ -566,7 +566,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Continuous_Learning
+###  http://craigtrim.ai/askowltest#Continuous_Learning
 
 :Continuous_Learning rdf:type owl:Class ;
                      
@@ -578,7 +578,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Country
+###  http://craigtrim.ai/askowltest#Country
 
 :Country rdf:type owl:Class ;
          
@@ -588,7 +588,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Course
+###  http://craigtrim.ai/askowltest#Course
 
 :Course rdf:type owl:Class ;
         
@@ -598,7 +598,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Date
+###  http://craigtrim.ai/askowltest#Date
 
 :Date rdf:type owl:Class ;
       
@@ -608,7 +608,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Department
+###  http://craigtrim.ai/askowltest#Department
 
 :Department rdf:type owl:Class ;
             
@@ -618,7 +618,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Development
+###  http://craigtrim.ai/askowltest#Development
 
 :Development rdf:type owl:Class ;
              
@@ -628,7 +628,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Diploma
+###  http://craigtrim.ai/askowltest#Diploma
 
 :Diploma rdf:type owl:Class ;
          
@@ -640,7 +640,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Doctoral_Degree
+###  http://craigtrim.ai/askowltest#Doctoral_Degree
 
 :Doctoral_Degree rdf:type owl:Class ;
                  
@@ -654,7 +654,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Education
+###  http://craigtrim.ai/askowltest#Education
 
 :Education rdf:type owl:Class ;
            
@@ -664,7 +664,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Educator
+###  http://craigtrim.ai/askowltest#Educator
 
 :Educator rdf:type owl:Class ;
           
@@ -674,7 +674,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Elapsed_Time
+###  http://craigtrim.ai/askowltest#Elapsed_Time
 
 :Elapsed_Time rdf:type owl:Class ;
               
@@ -686,7 +686,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Elderly_Patient
+###  http://craigtrim.ai/askowltest#Elderly_Patient
 
 :Elderly_Patient rdf:type owl:Class ;
                  
@@ -696,7 +696,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Emergency_Room
+###  http://craigtrim.ai/askowltest#Emergency_Room
 
 :Emergency_Room rdf:type owl:Class ;
                 
@@ -708,7 +708,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Empathy
+###  http://craigtrim.ai/askowltest#Empathy
 
 :Empathy rdf:type owl:Class ;
          
@@ -718,7 +718,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Ethical_Practice
+###  http://craigtrim.ai/askowltest#Ethical_Practice
 
 :Ethical_Practice rdf:type owl:Class ;
                   
@@ -730,7 +730,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Europe
+###  http://craigtrim.ai/askowltest#Europe
 
 :Europe rdf:type owl:Class ;
         
@@ -740,7 +740,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Evaluation
+###  http://craigtrim.ai/askowltest#Evaluation
 
 :Evaluation rdf:type owl:Class ;
             
@@ -752,7 +752,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Event
+###  http://craigtrim.ai/askowltest#Event
 
 :Event rdf:type owl:Class ;
        
@@ -762,7 +762,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Facility_Closure
+###  http://craigtrim.ai/askowltest#Facility_Closure
 
 :Facility_Closure rdf:type owl:Class ;
                   
@@ -774,7 +774,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Fail_to_Rescue_Rate
+###  http://craigtrim.ai/askowltest#Fail_to_Rescue_Rate
 
 :Fail_to_Rescue_Rate rdf:type owl:Class ;
                      
@@ -786,7 +786,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Fair_Pay
+###  http://craigtrim.ai/askowltest#Fair_Pay
 
 :Fair_Pay rdf:type owl:Class ;
           
@@ -800,7 +800,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Family_Nurse_Practitioner
+###  http://craigtrim.ai/askowltest#Family_Nurse_Practitioner
 
 :Family_Nurse_Practitioner rdf:type owl:Class ;
                            
@@ -812,7 +812,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Female_Patient
+###  http://craigtrim.ai/askowltest#Female_Patient
 
 :Female_Patient rdf:type owl:Class ;
                 
@@ -822,7 +822,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Florence_Nightingale
+###  http://craigtrim.ai/askowltest#Florence_Nightingale
 
 :Florence_Nightingale rdf:type owl:Class ;
                       
@@ -832,7 +832,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Gender_Bias
+###  http://craigtrim.ai/askowltest#Gender_Bias
 
 :Gender_Bias rdf:type owl:Class ;
              
@@ -842,7 +842,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Geopolitical_Entity
+###  http://craigtrim.ai/askowltest#Geopolitical_Entity
 
 :Geopolitical_Entity rdf:type owl:Class ;
                      
@@ -852,7 +852,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Group
+###  http://craigtrim.ai/askowltest#Group
 
 :Group rdf:type owl:Class ;
        
@@ -864,7 +864,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Health
+###  http://craigtrim.ai/askowltest#Health
 
 :Health rdf:type owl:Class ;
         
@@ -874,7 +874,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Health_Care
+###  http://craigtrim.ai/askowltest#Health_Care
 
 :Health_Care rdf:type owl:Class ;
              
@@ -884,7 +884,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Health_Care_Education
+###  http://craigtrim.ai/askowltest#Health_Care_Education
 
 :Health_Care_Education rdf:type owl:Class ;
                        
@@ -894,7 +894,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Health_Care_Provider
+###  http://craigtrim.ai/askowltest#Health_Care_Provider
 
 :Health_Care_Provider rdf:type owl:Class ;
                       
@@ -904,7 +904,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Health_Care_Quality
+###  http://craigtrim.ai/askowltest#Health_Care_Quality
 
 :Health_Care_Quality rdf:type owl:Class ;
                      
@@ -914,7 +914,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Health_Care_Reform
+###  http://craigtrim.ai/askowltest#Health_Care_Reform
 
 :Health_Care_Reform rdf:type owl:Class ;
                     
@@ -924,7 +924,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Health_Care_Specialist
+###  http://craigtrim.ai/askowltest#Health_Care_Specialist
 
 :Health_Care_Specialist rdf:type owl:Class ;
                         
@@ -936,7 +936,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Health_Department
+###  http://craigtrim.ai/askowltest#Health_Department
 
 :Health_Department rdf:type owl:Class ;
                    
@@ -946,7 +946,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Historical_Nursing
+###  http://craigtrim.ai/askowltest#Historical_Nursing
 
 :Historical_Nursing rdf:type owl:Class ;
                     
@@ -956,7 +956,7 @@
 
 
 
-###  http://graffl.ai/askowltest#History
+###  http://craigtrim.ai/askowltest#History
 
 :History rdf:type owl:Class ;
          
@@ -966,7 +966,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Home
+###  http://craigtrim.ai/askowltest#Home
 
 :Home rdf:type owl:Class ;
       
@@ -976,7 +976,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Hospital
+###  http://craigtrim.ai/askowltest#Hospital
 
 :Hospital rdf:type owl:Class ;
           
@@ -986,7 +986,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Johnson_and_Johnson
+###  http://craigtrim.ai/askowltest#Johnson_and_Johnson
 
 :Johnson_and_Johnson rdf:type owl:Class ;
                      
@@ -999,7 +999,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Labor_Event
+###  http://craigtrim.ai/askowltest#Labor_Event
 
 :Labor_Event rdf:type owl:Class ;
              
@@ -1009,7 +1009,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Language
+###  http://craigtrim.ai/askowltest#Language
 
 :Language rdf:type owl:Class ;
           
@@ -1019,7 +1019,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Learning
+###  http://craigtrim.ai/askowltest#Learning
 
 :Learning rdf:type owl:Class ;
           
@@ -1029,7 +1029,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Location
+###  http://craigtrim.ai/askowltest#Location
 
 :Location rdf:type owl:Class ;
           
@@ -1039,7 +1039,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Long_Term_Health_Care
+###  http://craigtrim.ai/askowltest#Long_Term_Health_Care
 
 :Long_Term_Health_Care rdf:type owl:Class ;
                        
@@ -1051,7 +1051,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Male_Patient
+###  http://craigtrim.ai/askowltest#Male_Patient
 
 :Male_Patient rdf:type owl:Class ;
               
@@ -1061,7 +1061,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Master_of_Arts
+###  http://craigtrim.ai/askowltest#Master_of_Arts
 
 :Master_of_Arts rdf:type owl:Class ;
                 
@@ -1071,7 +1071,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Master_of_Science
+###  http://craigtrim.ai/askowltest#Master_of_Science
 
 :Master_of_Science rdf:type owl:Class ;
                    
@@ -1083,7 +1083,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Master_of_Science_in_Nursing
+###  http://craigtrim.ai/askowltest#Master_of_Science_in_Nursing
 
 :Master_of_Science_in_Nursing rdf:type owl:Class ;
                               
@@ -1098,7 +1098,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Masters_Degree
+###  http://craigtrim.ai/askowltest#Masters_Degree
 
 :Masters_Degree rdf:type owl:Class ;
                 
@@ -1111,7 +1111,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Medical_Building
+###  http://craigtrim.ai/askowltest#Medical_Building
 
 :Medical_Building rdf:type owl:Class ;
                   
@@ -1121,7 +1121,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Medical_Facility_Closure
+###  http://craigtrim.ai/askowltest#Medical_Facility_Closure
 
 :Medical_Facility_Closure rdf:type owl:Class ;
                           
@@ -1135,7 +1135,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Mental_Health
+###  http://craigtrim.ai/askowltest#Mental_Health
 
 :Mental_Health rdf:type owl:Class ;
                
@@ -1145,7 +1145,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Modern_Nursing
+###  http://craigtrim.ai/askowltest#Modern_Nursing
 
 :Modern_Nursing rdf:type owl:Class ;
                 
@@ -1155,7 +1155,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Money
+###  http://craigtrim.ai/askowltest#Money
 
 :Money rdf:type owl:Class ;
        
@@ -1165,7 +1165,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Mortality_Rate
+###  http://craigtrim.ai/askowltest#Mortality_Rate
 
 :Mortality_Rate rdf:type owl:Class ;
                 
@@ -1175,7 +1175,7 @@
 
 
 
-###  http://graffl.ai/askowltest#National_Certification
+###  http://craigtrim.ai/askowltest#National_Certification
 
 :National_Certification rdf:type owl:Class ;
                         
@@ -1185,7 +1185,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nationality
+###  http://craigtrim.ai/askowltest#Nationality
 
 :Nationality rdf:type owl:Class ;
              
@@ -1195,7 +1195,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nurse
+###  http://craigtrim.ai/askowltest#Nurse
 
 :Nurse rdf:type owl:Class ;
        
@@ -1209,7 +1209,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nurse_Educator
+###  http://craigtrim.ai/askowltest#Nurse_Educator
 
 :Nurse_Educator rdf:type owl:Class ;
                 
@@ -1221,7 +1221,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nurse_Practitioner
+###  http://craigtrim.ai/askowltest#Nurse_Practitioner
 
 :Nurse_Practitioner rdf:type owl:Class ;
                     
@@ -1237,7 +1237,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nursing
+###  http://craigtrim.ai/askowltest#Nursing
 
 :Nursing rdf:type owl:Class ;
          
@@ -1247,7 +1247,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nursing_Diploma
+###  http://craigtrim.ai/askowltest#Nursing_Diploma
 
 :Nursing_Diploma rdf:type owl:Class ;
                  
@@ -1259,7 +1259,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nursing_Education
+###  http://craigtrim.ai/askowltest#Nursing_Education
 
 :Nursing_Education rdf:type owl:Class ;
                    
@@ -1269,7 +1269,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nursing_Home
+###  http://craigtrim.ai/askowltest#Nursing_Home
 
 :Nursing_Home rdf:type owl:Class ;
               
@@ -1279,7 +1279,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nursing_School
+###  http://craigtrim.ai/askowltest#Nursing_School
 
 :Nursing_School rdf:type owl:Class ;
                 
@@ -1295,7 +1295,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Nursing_Student
+###  http://craigtrim.ai/askowltest#Nursing_Student
 
 :Nursing_Student rdf:type owl:Class ;
                  
@@ -1305,7 +1305,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Ordinal
+###  http://craigtrim.ai/askowltest#Ordinal
 
 :Ordinal rdf:type owl:Class ;
          
@@ -1315,7 +1315,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Organization
+###  http://craigtrim.ai/askowltest#Organization
 
 :Organization rdf:type owl:Class ;
               
@@ -1325,7 +1325,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Outcome
+###  http://craigtrim.ai/askowltest#Outcome
 
 :Outcome rdf:type owl:Class ;
          
@@ -1335,7 +1335,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Outcome_Evaluation
+###  http://craigtrim.ai/askowltest#Outcome_Evaluation
 
 :Outcome_Evaluation rdf:type owl:Class ;
                     
@@ -1345,7 +1345,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Patient
+###  http://craigtrim.ai/askowltest#Patient
 
 :Patient rdf:type owl:Class ;
          
@@ -1355,7 +1355,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Patient_Care
+###  http://craigtrim.ai/askowltest#Patient_Care
 
 :Patient_Care rdf:type owl:Class ;
               
@@ -1370,7 +1370,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Patient_Treatment
+###  http://craigtrim.ai/askowltest#Patient_Treatment
 
 :Patient_Treatment rdf:type owl:Class ;
                    
@@ -1382,7 +1382,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Patient_Treatment_Plan
+###  http://craigtrim.ai/askowltest#Patient_Treatment_Plan
 
 :Patient_Treatment_Plan rdf:type owl:Class ;
                         
@@ -1392,7 +1392,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Pay
+###  http://craigtrim.ai/askowltest#Pay
 
 :Pay rdf:type owl:Class ;
      
@@ -1404,7 +1404,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Pediactric_Patient
+###  http://craigtrim.ai/askowltest#Pediactric_Patient
 
 :Pediactric_Patient rdf:type owl:Class ;
                     
@@ -1414,7 +1414,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Peer_Review
+###  http://craigtrim.ai/askowltest#Peer_Review
 
 :Peer_Review rdf:type owl:Class ;
              
@@ -1426,7 +1426,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Percent
+###  http://craigtrim.ai/askowltest#Percent
 
 :Percent rdf:type owl:Class ;
          
@@ -1436,7 +1436,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Permanent
+###  http://craigtrim.ai/askowltest#Permanent
 
 :Permanent rdf:type owl:Class ;
            
@@ -1448,7 +1448,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Person
+###  http://craigtrim.ai/askowltest#Person
 
 :Person rdf:type owl:Class ;
         
@@ -1460,7 +1460,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Personal_Touch
+###  http://craigtrim.ai/askowltest#Personal_Touch
 
 :Personal_Touch rdf:type owl:Class ;
                 
@@ -1470,7 +1470,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Pharmacist
+###  http://craigtrim.ai/askowltest#Pharmacist
 
 :Pharmacist rdf:type owl:Class ;
             
@@ -1482,7 +1482,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Pharmacy
+###  http://craigtrim.ai/askowltest#Pharmacy
 
 :Pharmacy rdf:type owl:Class ;
           
@@ -1492,7 +1492,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Physician
+###  http://craigtrim.ai/askowltest#Physician
 
 :Physician rdf:type owl:Class ;
            
@@ -1504,7 +1504,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Plan
+###  http://craigtrim.ai/askowltest#Plan
 
 :Plan rdf:type owl:Class ;
       
@@ -1515,7 +1515,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Political_Activity
+###  http://craigtrim.ai/askowltest#Political_Activity
 
 :Political_Activity rdf:type owl:Class ;
                     
@@ -1525,7 +1525,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Political_Group
+###  http://craigtrim.ai/askowltest#Political_Group
 
 :Political_Group rdf:type owl:Class ;
                  
@@ -1537,7 +1537,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Practice
+###  http://craigtrim.ai/askowltest#Practice
 
 :Practice rdf:type owl:Class ;
           
@@ -1547,7 +1547,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Primary_Care
+###  http://craigtrim.ai/askowltest#Primary_Care
 
 :Primary_Care rdf:type owl:Class ;
               
@@ -1557,7 +1557,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Product
+###  http://craigtrim.ai/askowltest#Product
 
 :Product rdf:type owl:Class ;
          
@@ -1567,7 +1567,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Profession
+###  http://craigtrim.ai/askowltest#Profession
 
 :Profession rdf:type owl:Class ;
             
@@ -1577,7 +1577,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Professional_Development
+###  http://craigtrim.ai/askowltest#Professional_Development
 
 :Professional_Development rdf:type owl:Class ;
                           
@@ -1587,7 +1587,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Protestant_Church
+###  http://craigtrim.ai/askowltest#Protestant_Church
 
 :Protestant_Church rdf:type owl:Class ;
                    
@@ -1597,7 +1597,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Provider
+###  http://craigtrim.ai/askowltest#Provider
 
 :Provider rdf:type owl:Class ;
           
@@ -1607,7 +1607,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Psychiatric_Mental_Health_Nurse_Practitioner
+###  http://craigtrim.ai/askowltest#Psychiatric_Mental_Health_Nurse_Practitioner
 
 :Psychiatric_Mental_Health_Nurse_Practitioner rdf:type owl:Class ;
                                               
@@ -1619,7 +1619,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Public_Health_Department
+###  http://craigtrim.ai/askowltest#Public_Health_Department
 
 :Public_Health_Department rdf:type owl:Class ;
                           
@@ -1629,7 +1629,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Quality
+###  http://craigtrim.ai/askowltest#Quality
 
 :Quality rdf:type owl:Class ;
          
@@ -1641,7 +1641,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Quantifiable_Measurement
+###  http://craigtrim.ai/askowltest#Quantifiable_Measurement
 
 :Quantifiable_Measurement rdf:type owl:Class ;
                           
@@ -1653,7 +1653,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Quantity
+###  http://craigtrim.ai/askowltest#Quantity
 
 :Quantity rdf:type owl:Class ;
           
@@ -1663,7 +1663,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Racial_Bias
+###  http://craigtrim.ai/askowltest#Racial_Bias
 
 :Racial_Bias rdf:type owl:Class ;
              
@@ -1675,7 +1675,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Readmission
+###  http://craigtrim.ai/askowltest#Readmission
 
 :Readmission rdf:type owl:Class ;
              
@@ -1685,7 +1685,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Readmission_Rate
+###  http://craigtrim.ai/askowltest#Readmission_Rate
 
 :Readmission_Rate rdf:type owl:Class ;
                   
@@ -1697,7 +1697,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Receiver
+###  http://craigtrim.ai/askowltest#Receiver
 
 :Receiver rdf:type owl:Class ;
           
@@ -1707,7 +1707,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Reform
+###  http://craigtrim.ai/askowltest#Reform
 
 :Reform rdf:type owl:Class ;
         
@@ -1719,7 +1719,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Registered_Nurse
+###  http://craigtrim.ai/askowltest#Registered_Nurse
 
 :Registered_Nurse rdf:type owl:Class ;
                   
@@ -1733,7 +1733,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Regulation
+###  http://craigtrim.ai/askowltest#Regulation
 
 :Regulation rdf:type owl:Class ;
             
@@ -1745,7 +1745,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Religious_Group
+###  http://craigtrim.ai/askowltest#Religious_Group
 
 :Religious_Group rdf:type owl:Class ;
                  
@@ -1757,7 +1757,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Room
+###  http://craigtrim.ai/askowltest#Room
 
 :Room rdf:type owl:Class ;
       
@@ -1767,7 +1767,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Rule
+###  http://craigtrim.ai/askowltest#Rule
 
 :Rule rdf:type owl:Class ;
       
@@ -1780,7 +1780,7 @@
 
 
 
-###  http://graffl.ai/askowltest#School
+###  http://craigtrim.ai/askowltest#School
 
 :School rdf:type owl:Class ;
         
@@ -1790,7 +1790,7 @@
 
 
 
-###  http://graffl.ai/askowltest#SeeAlsoTestCase
+###  http://craigtrim.ai/askowltest#SeeAlsoTestCase
 
 :SeeAlsoTestCase rdf:type owl:Class ;
                  
@@ -1802,7 +1802,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Shortage
+###  http://craigtrim.ai/askowltest#Shortage
 
 :Shortage rdf:type owl:Class ;
           
@@ -1812,7 +1812,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Site
+###  http://craigtrim.ai/askowltest#Site
 
 :Site rdf:type owl:Class ;
       
@@ -1822,7 +1822,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Skill
+###  http://craigtrim.ai/askowltest#Skill
 
 :Skill rdf:type owl:Class ;
        
@@ -1832,7 +1832,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Soft_Skill
+###  http://craigtrim.ai/askowltest#Soft_Skill
 
 :Soft_Skill rdf:type owl:Class ;
             
@@ -1842,7 +1842,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Spain
+###  http://craigtrim.ai/askowltest#Spain
 
 :Spain rdf:type owl:Class ;
        
@@ -1852,7 +1852,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Spanish
+###  http://craigtrim.ai/askowltest#Spanish
 
 :Spanish rdf:type owl:Class ;
          
@@ -1862,7 +1862,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Spanish_Hospital
+###  http://craigtrim.ai/askowltest#Spanish_Hospital
 
 :Spanish_Hospital rdf:type owl:Class ;
                   
@@ -1874,7 +1874,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Specialist
+###  http://craigtrim.ai/askowltest#Specialist
 
 :Specialist rdf:type owl:Class ;
             
@@ -1884,7 +1884,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Staff
+###  http://craigtrim.ai/askowltest#Staff
 
 :Staff rdf:type owl:Class ;
        
@@ -1894,7 +1894,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Staffing
+###  http://craigtrim.ai/askowltest#Staffing
 
 :Staffing rdf:type owl:Class ;
           
@@ -1906,7 +1906,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Staffing_Level
+###  http://craigtrim.ai/askowltest#Staffing_Level
 
 :Staffing_Level rdf:type owl:Class ;
                 
@@ -1918,7 +1918,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Staffing_Shortage
+###  http://craigtrim.ai/askowltest#Staffing_Shortage
 
 :Staffing_Shortage rdf:type owl:Class ;
                    
@@ -1929,7 +1929,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Strike
+###  http://craigtrim.ai/askowltest#Strike
 
 :Strike rdf:type owl:Class ;
         
@@ -1943,7 +1943,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Student
+###  http://craigtrim.ai/askowltest#Student
 
 :Student rdf:type owl:Class ;
          
@@ -1953,7 +1953,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Surgeon
+###  http://craigtrim.ai/askowltest#Surgeon
 
 :Surgeon rdf:type owl:Class ;
          
@@ -1965,7 +1965,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Surgery
+###  http://craigtrim.ai/askowltest#Surgery
 
 :Surgery rdf:type owl:Class ;
          
@@ -1975,7 +1975,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Temporary
+###  http://craigtrim.ai/askowltest#Temporary
 
 :Temporary rdf:type owl:Class ;
            
@@ -1987,7 +1987,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Time
+###  http://craigtrim.ai/askowltest#Time
 
 :Time rdf:type owl:Class ;
       
@@ -1997,7 +1997,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Training
+###  http://craigtrim.ai/askowltest#Training
 
 :Training rdf:type owl:Class ;
           
@@ -2007,7 +2007,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Training_Event
+###  http://craigtrim.ai/askowltest#Training_Event
 
 :Training_Event rdf:type owl:Class ;
                 
@@ -2017,7 +2017,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Treatment_Event
+###  http://craigtrim.ai/askowltest#Treatment_Event
 
 :Treatment_Event rdf:type owl:Class ;
                  
@@ -2027,7 +2027,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Urgent_Care
+###  http://craigtrim.ai/askowltest#Urgent_Care
 
 :Urgent_Care rdf:type owl:Class ;
              
@@ -2040,7 +2040,7 @@
 
 
 
-###  http://graffl.ai/askowltest#Work_of_Art
+###  http://craigtrim.ai/askowltest#Work_of_Art
 
 :Work_of_Art rdf:type owl:Class ;
              

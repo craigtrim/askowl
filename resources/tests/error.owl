@@ -1,12 +1,12 @@
-@prefix : <http://graffl.ai/error#> .
+@prefix : <http://craigtrim.ai/error#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://graffl.ai/error> .
+@base <http://craigtrim.ai/error> .
 
-<http://graffl.ai/error> rdf:type owl:Ontology .
+<http://craigtrim.ai/error> rdf:type owl:Ontology .
 
 
 #################################################################
@@ -16,37 +16,37 @@
 #################################################################
 
 
-###  http://graffl.ai/error#affects
+###  http://craigtrim.ai/error#affects
 
 :affects rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/error#effects
+###  http://craigtrim.ai/error#effects
 
 :effects rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/error#implies
+###  http://craigtrim.ai/error#implies
 
 :implies rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/error#locatedIn
+###  http://craigtrim.ai/error#locatedIn
 
 :locatedIn rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/error#meansOf
+###  http://craigtrim.ai/error#meansOf
 
 :meansOf rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/error#measures
+###  http://craigtrim.ai/error#measures
 
 :measures rdf:type owl:AnnotationProperty ;
           
@@ -54,7 +54,7 @@
 
 
 
-###  http://graffl.ai/error#nluComment
+###  http://craigtrim.ai/error#nluComment
 
 :nluComment rdf:type owl:AnnotationProperty ;
             
@@ -62,25 +62,25 @@
 
 
 
-###  http://graffl.ai/error#requires
+###  http://craigtrim.ai/error#requires
 
 :requires rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/error#similarTo
+###  http://craigtrim.ai/error#similarTo
 
 :similarTo rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/error#uses
+###  http://craigtrim.ai/error#uses
 
 :uses rdf:type owl:AnnotationProperty .
 
 
 
-###  http://graffl.ai/error#worksIn
+###  http://craigtrim.ai/error#worksIn
 
 :worksIn rdf:type owl:AnnotationProperty .
 
@@ -95,31 +95,31 @@
 #################################################################
 
 
-###  http://graffl.ai/error#caseSensitive
+###  http://craigtrim.ai/error#caseSensitive
 
 :caseSensitive rdf:type rdfs:Datatype .
 
 
 
-###  http://graffl.ai/error#grafflNER
+###  http://craigtrim.ai/error#grafflNER
 
 :grafflNER rdf:type rdfs:Datatype .
 
 
 
-###  http://graffl.ai/error#grafflSLOT
+###  http://craigtrim.ai/error#grafflSLOT
 
 :grafflSLOT rdf:type rdfs:Datatype .
 
 
 
-###  http://graffl.ai/error#spacyNER
+###  http://craigtrim.ai/error#spacyNER
 
 :spacyNER rdf:type rdfs:Datatype .
 
 
 
-###  http://graffl.ai/error#spanDirection
+###  http://craigtrim.ai/error#spanDirection
 
 :spanDirection rdf:type rdfs:Datatype .
 
@@ -134,19 +134,19 @@
 #################################################################
 
 
-###  http://graffl.ai/error#Alpha
+###  http://craigtrim.ai/error#Alpha
 
 :Alpha rdf:type owl:Class .
 
 
 
-###  http://graffl.ai/error#Beta
+###  http://craigtrim.ai/error#Beta
 
 :Beta rdf:type owl:Class .
 
 
 
-###  http://graffl.ai/error#Gamma
+###  http://craigtrim.ai/error#Gamma
 
 :Gamma rdf:type owl:Class .
 

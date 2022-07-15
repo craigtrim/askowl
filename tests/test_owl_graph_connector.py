@@ -9,7 +9,7 @@ def test_component():
     absolute_path = os.path.normpath(os.path.join(os.getcwd(), 'resources/tests'))
 
     dmo = OwlGraphConnector(prefix='askowltest',
-                            namespace='http://graffl.ai/askowltest#',
+                            namespace='http://craigtrim.ai/askowltest#',
                             ontology_name='askowltest.owl',
                             absolute_path=absolute_path)
     assert dmo

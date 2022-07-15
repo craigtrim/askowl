@@ -22,23 +22,23 @@ class GenerateViewSynonyms(BaseObject):
         """ Change History
         Created:
             7-Oct-2021
-            craig.@grafflr.ai
-            *   https://github.com/grafflr/graffl-core/issues/8
+            craigtrim@gmail.com
+            *   Create Owl2PY Util Service 
         Updated:
             2-Feb-2022
-            craig.@grafflr.ai
+            craigtrim@gmail.com
             *   augment forms by removing punctuation
-                https://github.com/grafflr/graffl-core/issues/155
+                Defect in Synonym Swapping when Punctuation is Present 
         Updated:
             27-May-2022
-            craig.@grafflr.ai
+            craigtrim@gmail.com
             *   ported to ask-owl
-                https://github.com/grafflr/ask-owl/issues/10
+                https://github.com/craigtrim/askowl/issues/6
         Updated:
             2-Jun-2022
-            craig.@grafflr.ai
+            craigtrim@gmail.com
             *   tokenize spaces in synonyms
-                https://github.com/grafflr/deepnlu/issues/28#issuecomment-1145426400
+                https://github.com/craigtrim/askowl/issues/7
         """
         BaseObject.__init__(self, __name__)
 
@@ -63,13 +63,13 @@ class GenerateViewSynonyms(BaseObject):
                 s.add(value.lower())
 
                 # Reference: Defect in Synonym Swapping when Punctuation is Present
-                # https://github.com/grafflr/graffl-core/issues/155
+                # https://github.com/craigtrim/askowl/issues/11
                 for punkt in self.__punkt:
                     if value.endswith(punkt):
                         s.add(value[:len(value) - len(punkt)])
 
                 # Reference: Tokenization of Space Required
-                # https://github.com/grafflr/deepnlu/issues/28#issuecomment-1145426400
+                # https://github.com/craigtrim/askowl/issues/7
                 # TODO: likely need better testing around period vs ellipses vs multiple periods here
                 if '.' in value and '...' not in value:
                     _value = value.replace('.', ' . ')

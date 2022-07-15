@@ -17,14 +17,14 @@ class OwlQueryNormalize(BaseObject):
 
         Created:
             13-Oct-2021
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   refactored out of 'owl-data-extract'
-                https://github.com/grafflr/graffl-core/issues/38
+                Build Owl2PY dictionary for backwardCompatibilityTypes 
         Updated:
             25-May-2022
-            craig@grafflr.ai
-            *   refactor into 'ask-owl' repo
-                https://github.com/grafflr/ask-owl/issues/1
+            craigtrim@gmail.com
+            *   refactor into 'askowl' repo
+                https://github.com/craigtrim/askowl/issues/1
 
         Args:
             graph (Graph): an instantiated RDF graph

@@ -24,24 +24,24 @@ class OwlQueryExtract(BaseObject):
 
         Created:
             13-Oct-2021
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   refactored out of 'owl-data-extract'
-                https://github.com/grafflr/graffl-core/issues/38
+                Build Owl2PY dictionary for backwardCompatibilityTypes
         Updated:
             2-Feb-2022
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   do not split designated string datatypes
-                https://github.com/grafflr/graffl-core/issues/156
+                https://github.com/craigtrim/askowl/issues/3
         Updated:
             25-May-2022
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   refactor into 'ask-owl' repo
-                https://github.com/grafflr/ask-owl/issues/1
+                https://github.com/craigtrim/askowl/issues/1
         Updated:
             27-May-2022
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   expose ability to lowercase output
-                https://github.com/grafflr/ask-owl/issues/9
+                https://github.com/craigtrim/askowl/issues/4
 
         Args:
             graph (Graph): an instantiated RDF graph

@@ -6,7 +6,6 @@
 from functools import lru_cache
 from collections import defaultdict
 
-from rdflib import Graph
 from rdflib.plugins.sparql.processor import SPARQLResult
 
 from baseblock import BaseObject
@@ -29,13 +28,13 @@ class AskOwlAPI(BaseObject):
 
         Created:
             25-May-2022
-            craig@grafflr.ai
-            *   https://github.com/grafflr/ask-owl/issues/1
+            craigtrim@gmail.com
+            *   https://github.com/craigtrim/askowl/issues/1
         Created:
             6-Jun-2022
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   simplify __init__ method in pursuit of
-                https://github.com/grafflr/ask-owl/issues/16
+                https://github.com/craigtrim/askowl/issues/2
 
         Args:
             ontology_name (str): the name of the Ontology (OWL) model
@@ -135,7 +134,7 @@ class AskOwlAPI(BaseObject):
             }
 
         Reference:
-            https://github.com/grafflr/ask-owl/issues/3
+            https://github.com/craigtrim/askowl/issues/8
 
         Args:
             to_lowercase (bool, optional): lowercase all data. Defaults to True.
@@ -315,7 +314,7 @@ class AskOwlAPI(BaseObject):
         """ Generate n-Gram Spans suitable for Synonym Matching
 
         Reference:
-            https://github.com/grafflr/ask-owl/issues/4
+            https://github.com/craigtrim/askowl/issues/8
 
         Returns:
             dict: dictionary of values keyed by n-gram size
@@ -359,7 +358,7 @@ class AskOwlAPI(BaseObject):
         """ Generate a Dictionary of Entities keyed to Synonym Lists
 
         Reference:
-            https://github.com/grafflr/ask-owl/issues/4
+            https://github.com/craigtrim/askowl/issues/8
 
         Returns:
             dict: dictionary of entities keyed by synonym
@@ -377,7 +376,7 @@ class AskOwlAPI(BaseObject):
         Synonyms are keyed to one-or-more Entities
 
         Reference:
-            https://github.com/grafflr/ask-owl/issues/4
+            https://github.com/craigtrim/askowl/issues/8
 
         Returns:
             dict: dictionary of synonyms keyed by entity
@@ -394,7 +393,7 @@ class AskOwlAPI(BaseObject):
         """ Entity Spans for Long-Range Matching
 
         Reference:
-            https://github.com/grafflr/ask-owl/issues/11
+            https://github.com/craigtrim/askowl/issues/5
 
         Returns:
             dict: dictionary of spans keyed by entity name

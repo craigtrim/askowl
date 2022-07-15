@@ -11,7 +11,7 @@ from baseblock import BaseObject
 
 ## ---------------------------------------------------------- ##
 # Purpose:    List of Stopwords
-# Reference:  https://github.com/grafflr/graffl-core/issues/75#issuecomment-951259298
+# Reference:  https://github.com/craigtrim/askowl/issues/10
 # Source:     https://gist.github.com/sebleier/554280#gistcomment-2596130
 # Notes:      this list will likely be refined as needed over time
 #             the 'stopwords' represented here are likely too coarse-grained
@@ -35,13 +35,13 @@ class GenerateViewSpans(BaseObject):
 
         Created:
             25-Oct-2021
-            craig.@grafflr.ai
-            *   https://github.com/grafflr/graffl-core/issues/75
+            craigtrim@gmail.com
+            *   Automate Long Distance Matching in Multi Gram Entities
         Updated:
             27-May-2022
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   ported to ask-owl
-                https://github.com/grafflr/ask-owl/issues/11
+                https://github.com/craigtrim/askowl/issues/5
         """
         BaseObject.__init__(self, __name__)
 

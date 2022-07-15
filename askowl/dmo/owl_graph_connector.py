@@ -24,13 +24,13 @@ class OwlGraphConnector(BaseObject):
 
         Created:
             6-Oct-2021
-            craig@grafflr.ai
-            *   https://github.com/grafflr/graffl-core/issues/8
+            craigtrim@gmail.com
+            *   Create Owl2PY Util Service
         Updated:
             25-May-2022
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   refactor into 'ask-owl' repo
-                https://github.com/grafflr/ask-owl/issues/1
+                https://github.com/craigtrim/askowl/issues/1
 
         Args:
             prefix (str): the query prefix

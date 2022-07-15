@@ -16,8 +16,8 @@ class GenerateViewTrie(BaseObject):
 
         Created:
             27-May-2022
-            craig@grafflr.ai
-            *   https://github.com/grafflr/ask-owl/issues/3
+            craigtrim@gmail.com
+            *   https://github.com/craigtrim/askowl/issues/8
         """
         BaseObject.__init__(self, __name__)
 

@@ -22,13 +22,13 @@ class LoadOntologyModel(BaseObject):
 
         Created:
             25-May-2022
-            craig@grafflr.ai
-            *   https://github.com/grafflr/ask-owl/issues/1
+            craigtrim@gmail.com
+            *   https://github.com/craigtrim/askowl/issues/1
         Updated:
             6-Jun-2022
-            craig@grafflr.ai
+            craigtrim@gmail.com
             *   refactored in pursuit of
-                https://github.com/grafflr/ask-owl/issues/16
+                https://github.com/craigtrim/askowl/issues/2
 
         Args:
             ontology_name (str): the name of the Ontology
@@ -36,7 +36,7 @@ class LoadOntologyModel(BaseObject):
             prefix (str, optional): the prefix. Defaults to None.
                 assumed to the ontology_name unless specified otherwise
             namespace (str, optional): the model namespace. Defaults to None.
-                assumed to be "http://graffl.ai/<ontology_name>" unless specified otherwise
+                assumed to be "http://craigtrim.ai/<ontology_name>" unless specified otherwise
             absolute_path (str): the absolute path to the OWL model
         """
         BaseObject.__init__(self, __name__)
@@ -72,7 +72,7 @@ class LoadOntologyModel(BaseObject):
     def _get_namespace(namespace: str,
                        ontology_name: str) -> str:
         if not namespace:
-            namespace = f"http://graffl.ai/{ontology_name}#"
+            namespace = f"http://craigtrim.ai/{ontology_name}#"
         return namespace
 
     def process(self) -> Graph:

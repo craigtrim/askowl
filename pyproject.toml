@@ -1,5 +1,5 @@
 [tool.poetry]
-authors = ["Craig Trim <craig@grafflr.ai>"]
+authors = ["Craig Trim <craigtrim@gmail.com>"]
 description = "Query and Interrogate OWL (Web Ontology Language) models"
 name = "askowl"
 version = "0.1.3"
