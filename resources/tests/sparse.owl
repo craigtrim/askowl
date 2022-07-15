@@ -1,12 +1,12 @@
-@prefix : <http://craigtrim.ai/sparse#> .
+@prefix : <http://graffl.ai/sparse#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://craigtrim.ai/sparse> .
+@base <http://graffl.ai/sparse> .
 
-<http://craigtrim.ai/sparse> rdf:type owl:Ontology .
+<http://graffl.ai/sparse> rdf:type owl:Ontology .
 
 
 #################################################################
@@ -16,37 +16,37 @@
 #################################################################
 
 
-###  http://craigtrim.ai/sparse#affects
+###  http://graffl.ai/sparse#affects
 
 :affects rdf:type owl:AnnotationProperty .
 
 
 
-###  http://craigtrim.ai/sparse#effects
+###  http://graffl.ai/sparse#effects
 
 :effects rdf:type owl:AnnotationProperty .
 
 
 
-###  http://craigtrim.ai/sparse#implies
+###  http://graffl.ai/sparse#implies
 
 :implies rdf:type owl:AnnotationProperty .
 
 
 
-###  http://craigtrim.ai/sparse#locatedIn
+###  http://graffl.ai/sparse#locatedIn
 
 :locatedIn rdf:type owl:AnnotationProperty .
 
 
 
-###  http://craigtrim.ai/sparse#meansOf
+###  http://graffl.ai/sparse#meansOf
 
 :meansOf rdf:type owl:AnnotationProperty .
 
 
 
-###  http://craigtrim.ai/sparse#measures
+###  http://graffl.ai/sparse#measures
 
 :measures rdf:type owl:AnnotationProperty ;
           
@@ -54,7 +54,7 @@
 
 
 
-###  http://craigtrim.ai/sparse#nluComment
+###  http://graffl.ai/sparse#nluComment
 
 :nluComment rdf:type owl:AnnotationProperty ;
             
@@ -62,25 +62,25 @@
 
 
 
-###  http://craigtrim.ai/sparse#requires
+###  http://graffl.ai/sparse#requires
 
 :requires rdf:type owl:AnnotationProperty .
 
 
 
-###  http://craigtrim.ai/sparse#similarTo
+###  http://graffl.ai/sparse#similarTo
 
 :similarTo rdf:type owl:AnnotationProperty .
 
 
 
-###  http://craigtrim.ai/sparse#uses
+###  http://graffl.ai/sparse#uses
 
 :uses rdf:type owl:AnnotationProperty .
 
 
 
-###  http://craigtrim.ai/sparse#worksIn
+###  http://graffl.ai/sparse#worksIn
 
 :worksIn rdf:type owl:AnnotationProperty .
 
@@ -95,31 +95,31 @@
 #################################################################
 
 
-###  http://craigtrim.ai/sparse#caseSensitive
+###  http://graffl.ai/sparse#caseSensitive
 
 :caseSensitive rdf:type rdfs:Datatype .
 
 
 
-###  http://craigtrim.ai/sparse#grafflNER
+###  http://graffl.ai/sparse#grafflNER
 
 :grafflNER rdf:type rdfs:Datatype .
 
 
 
-###  http://craigtrim.ai/sparse#grafflSLOT
+###  http://graffl.ai/sparse#grafflSLOT
 
 :grafflSLOT rdf:type rdfs:Datatype .
 
 
 
-###  http://craigtrim.ai/sparse#spacyNER
+###  http://graffl.ai/sparse#spacyNER
 
 :spacyNER rdf:type rdfs:Datatype .
 
 
 
-###  http://craigtrim.ai/sparse#spanDirection
+###  http://graffl.ai/sparse#spanDirection
 
 :spanDirection rdf:type rdfs:Datatype .
 
@@ -134,7 +134,7 @@
 #################################################################
 
 
-###  http://craigtrim.ai/sparse#Alpha
+###  http://graffl.ai/sparse#Alpha
 
 :Alpha rdf:type owl:Class ;
        
@@ -142,7 +142,7 @@
 
 
 
-###  http://craigtrim.ai/sparse#Beta
+###  http://graffl.ai/sparse#Beta
 
 :Beta rdf:type owl:Class ;
       
@@ -150,7 +150,7 @@
 
 
 
-###  http://craigtrim.ai/sparse#Gamma
+###  http://graffl.ai/sparse#Gamma
 
 :Gamma rdf:type owl:Class ;
        

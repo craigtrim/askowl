@@ -2,7 +2,7 @@
 authors = ["Craig Trim <craigtrim@gmail.com>"]
 description = "Query and Interrogate OWL (Web Ontology Language) models"
 name = "askowl"
-version = "0.1.3"
+version = "0.1.6"
 
 [tool.poetry.dependencies]
 baseblock = "^0.1.2"
