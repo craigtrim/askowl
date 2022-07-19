@@ -24,7 +24,7 @@ class AskOwlAPI(BaseObject):
     def __init__(self,
                  ontology_name: str,
                  absolute_path: str):
-        """ Change History
+        """ Change Log
 
         Created:
             25-May-2022

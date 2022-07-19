@@ -18,7 +18,7 @@ class QueryOntologyModel(BaseObject):
 
     def __init__(self,
                  graph: Graph):
-        """ Change History
+        """ Change Log
 
         Created:
             25-May-2022

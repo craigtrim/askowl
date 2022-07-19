@@ -12,7 +12,7 @@ class GenerateViewTrie(BaseObject):
     """ View Generator: Trie Grams """
 
     def __init__(self):
-        """ Change History
+        """ Change Log
 
         Created:
             27-May-2022

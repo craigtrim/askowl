@@ -18,7 +18,7 @@ class LoadOntologyModel(BaseObject):
                  absolute_path: str,
                  prefix: str = None,
                  namespace: str = None):
-        """ Change History
+        """ Change Log
 
         Created:
             25-May-2022

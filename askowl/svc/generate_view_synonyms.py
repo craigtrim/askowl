@@ -19,7 +19,7 @@ class GenerateViewSynonyms(BaseObject):
     ]
 
     def __init__(self):
-        """ Change History
+        """ Change Log
         Created:
             7-Oct-2021
             craigtrim@gmail.com

@@ -31,7 +31,7 @@ class GenerateViewSpans(BaseObject):
     """ View Generator: Entity Spans for Long-Range Synonym Swapping """
 
     def __init__(self):
-        """ Change History
+        """ Change Log
 
         Created:
             25-Oct-2021

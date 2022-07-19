@@ -20,7 +20,7 @@ class OwlGraphConnector(BaseObject):
                  namespace: str,
                  ontology_name: str,
                  absolute_path: str):
-        """ Change History
+        """ Change Log
 
         Created:
             6-Oct-2021

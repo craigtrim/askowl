@@ -13,7 +13,7 @@ class OwlQueryNormalize(BaseObject):
 
     def __init__(self,
                  graph: Graph):
-        """ Change History
+        """ Change Log
 
         Created:
             13-Oct-2021
