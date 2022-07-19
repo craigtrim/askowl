@@ -1,0 +1,2167 @@
+@prefix : <http://graffl.ai/normal#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://graffl.ai/normal> .
+
+<http://graffl.ai/normal> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+###  http://graffl.ai/normal#affects
+
+:affects rdf:type owl:AnnotationProperty .
+
+
+
+###  http://graffl.ai/normal#effects
+
+:effects rdf:type owl:AnnotationProperty .
+
+
+
+###  http://graffl.ai/normal#implies
+
+:implies rdf:type owl:AnnotationProperty .
+
+
+
+###  http://graffl.ai/normal#locatedIn
+
+:locatedIn rdf:type owl:AnnotationProperty .
+
+
+
+###  http://graffl.ai/normal#meansOf
+
+:meansOf rdf:type owl:AnnotationProperty .
+
+
+
+###  http://graffl.ai/normal#measures
+
+:measures rdf:type owl:AnnotationProperty ;
+          
+          rdfs:subPropertyOf :uses .
+
+
+
+###  http://graffl.ai/normal#nluComment
+
+:nluComment rdf:type owl:AnnotationProperty ;
+            
+            rdfs:subPropertyOf rdfs:comment .
+
+
+
+###  http://graffl.ai/normal#requires
+
+:requires rdf:type owl:AnnotationProperty .
+
+
+
+###  http://graffl.ai/normal#similarTo
+
+:similarTo rdf:type owl:AnnotationProperty .
+
+
+
+###  http://graffl.ai/normal#uses
+
+:uses rdf:type owl:AnnotationProperty .
+
+
+
+###  http://graffl.ai/normal#worksIn
+
+:worksIn rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+###  http://graffl.ai/normal#caseSensitive
+
+:caseSensitive rdf:type rdfs:Datatype .
+
+
+
+###  http://graffl.ai/normal#grafflNER
+
+:grafflNER rdf:type rdfs:Datatype .
+
+
+
+###  http://graffl.ai/normal#grafflSLOT
+
+:grafflSLOT rdf:type rdfs:Datatype .
+
+
+
+###  http://graffl.ai/normal#spacyNER
+
+:spacyNER rdf:type rdfs:Datatype .
+
+
+
+###  http://graffl.ai/normal#spanDirection
+
+:spanDirection rdf:type rdfs:Datatype .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://graffl.ai/normal#Activity
+
+:Activity rdf:type owl:Class ;
+          
+          rdfs:label "Activity" ;
+          
+          owl:backwardCompatibleWith "ACTIVITY"^^:grafflNER ;
+          
+          rdfs:seeAlso "action" .
+
+
+
+###  http://graffl.ai/normal#Acute_Care
+
+:Acute_Care rdf:type owl:Class ;
+            
+            rdfs:label "Acute Care" ;
+            
+            rdfs:subClassOf :Health_Care .
+
+
+
+###  http://graffl.ai/normal#Admission
+
+:Admission rdf:type owl:Class ;
+           
+           rdfs:label "Admission" ;
+           
+           rdfs:subClassOf :Event .
+
+
+
+###  http://graffl.ai/normal#Advanced_Practice_Registered_Nurse
+
+:Advanced_Practice_Registered_Nurse rdf:type owl:Class ;
+                                    
+                                    rdfs:label "Advanced Practice Registered Nurse" ;
+                                    
+                                    rdfs:subClassOf :Registered_Nurse ;
+                                    
+                                    rdfs:seeAlso "APRN" ;
+                                    
+                                    rdfs:isDefinedBy "https://onlinedegrees.und.edu/blog/nurse-practitioner-vs-rn/" .
+
+
+
+###  http://graffl.ai/normal#Agent
+
+:Agent rdf:type owl:Class ;
+       
+       rdfs:label "Agent" ;
+       
+       owl:backwardCompatibleWith "AGENT"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Airport
+
+:Airport rdf:type owl:Class ;
+         
+         rdfs:label "Airport" ;
+         
+         rdfs:subClassOf :Building .
+
+
+
+###  http://graffl.ai/normal#Alpha
+
+:Alpha rdf:type owl:Class ;
+       
+       rdfs:label "Alpha" ;
+       
+       rdfs:subClassOf :Greek ;
+       
+       :requires :Beta ;
+       
+       :similarTo :Eta .
+
+
+
+###  http://graffl.ai/normal#American
+
+:American rdf:type owl:Class ;
+          
+          rdfs:label "American" ;
+          
+          rdfs:subClassOf :Nationality .
+
+
+
+###  http://graffl.ai/normal#American_Association_of_Colleges_of_Nursing
+
+:American_Association_of_Colleges_of_Nursing rdf:type owl:Class ;
+                                             
+                                             rdfs:label "American Association of Colleges of Nursing" ;
+                                             
+                                             rdfs:subClassOf :Association ;
+                                             
+                                             rdfs:seeAlso "AACN" .
+
+
+
+###  http://graffl.ai/normal#American_Nurses_Association
+
+:American_Nurses_Association rdf:type owl:Class ;
+                             
+                             rdfs:label "American Nurses Association" ;
+                             
+                             rdfs:subClassOf :Association ;
+                             
+                             rdfs:seeAlso "ANA" ,
+                                          "american nursing association" .
+
+
+
+###  http://graffl.ai/normal#Apothecary
+
+:Apothecary rdf:type owl:Class ;
+            
+            rdfs:label "Apothecary" ;
+            
+            rdfs:subClassOf :Pharmacist ;
+            
+            :worksIn :Pharmacy .
+
+
+
+###  http://graffl.ai/normal#Artifact
+
+:Artifact rdf:type owl:Class ;
+          
+          rdfs:label "Artifact" ;
+          
+          owl:backwardCompatibleWith "ARTIFACT"^^:grafflNER ;
+          
+          rdfs:seeAlso "artefact" .
+
+
+
+###  http://graffl.ai/normal#Associates_Degree
+
+:Associates_Degree rdf:type owl:Class ;
+                   
+                   rdfs:label "Associate's Degree" ;
+                   
+                   rdfs:subClassOf :Diploma ;
+                   
+                   rdfs:seeAlso "Associate Degree" ,
+                                "AA degree" .
+
+
+
+###  http://graffl.ai/normal#Association
+
+:Association rdf:type owl:Class ;
+             
+             rdfs:label "Association" ;
+             
+             rdfs:subClassOf :Group ;
+             
+             owl:backwardCompatibleWith "ASSOC"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Bachelor_of_Arts
+
+:Bachelor_of_Arts rdf:type owl:Class ;
+                  
+                  rdfs:label "Bachelor of Arts" ;
+                  
+                  rdfs:subClassOf :Bachelors_Degree .
+
+
+
+###  http://graffl.ai/normal#Bachelor_of_Science
+
+:Bachelor_of_Science rdf:type owl:Class ;
+                     
+                     rdfs:label "Bachelor of Science" ;
+                     
+                     rdfs:subClassOf :Bachelors_Degree .
+
+
+
+###  http://graffl.ai/normal#Bachelor_of_Science_in_Nursing
+
+:Bachelor_of_Science_in_Nursing rdf:type owl:Class ;
+                                
+                                rdfs:label "Bachelor of Science in Nursing" ;
+                                
+                                rdfs:subClassOf :Bachelor_of_Science ;
+                                
+                                rdfs:seeAlso "BSN" .
+
+
+
+###  http://graffl.ai/normal#Bachelors_Degree
+
+:Bachelors_Degree rdf:type owl:Class ;
+                  
+                  rdfs:label "Bachelor's Degree" ;
+                  
+                  rdfs:subClassOf :Diploma ;
+                  
+                  rdfs:seeAlso "Bachelor Degree" ,
+                               "baccalaureate level" .
+
+
+
+###  http://graffl.ai/normal#Beta
+
+:Beta rdf:type owl:Class ;
+      
+      rdfs:label "Beta" ;
+      
+      rdfs:subClassOf :Greek ;
+      
+      :requires :Gamma .
+
+
+
+###  http://graffl.ai/normal#Bias
+
+:Bias rdf:type owl:Class ;
+      
+      rdfs:label "Bias" ;
+      
+      owl:backwardCompatibleWith "BIAS"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Building
+
+:Building rdf:type owl:Class ;
+          
+          rdfs:label "Building" ;
+          
+          owl:backwardCompatibleWith "FAC"^^:spacyNER ;
+          
+          rdfs:seeAlso "Edifice" .
+
+
+
+###  http://graffl.ai/normal#Cardinal
+
+:Cardinal rdf:type owl:Class ;
+          
+          rdfs:label "Cardinal" ;
+          
+          owl:backwardCompatibleWith "CARDINAL"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Care_Event
+
+:Care_Event rdf:type owl:Class ;
+            
+            rdfs:label "Care Event" ;
+            
+            rdfs:subClassOf :Event ;
+            
+            owl:backwardCompatibleWith "CARE"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Catholic_Church
+
+:Catholic_Church rdf:type owl:Class ;
+                 
+                 rdfs:label "Catholic Church" ;
+                 
+                 rdfs:subClassOf :Church ;
+                 
+                 :meansOf :Spanish_Hospital .
+
+
+
+###  http://graffl.ai/normal#Century
+
+:Century rdf:type owl:Class ;
+         
+         rdfs:label "Century" ;
+         
+         rdfs:subClassOf :Event .
+
+
+
+###  http://graffl.ai/normal#Certification
+
+:Certification rdf:type owl:Class ;
+               
+               rdfs:label "Certification" ;
+               
+               rdfs:subClassOf :Training .
+
+
+
+###  http://graffl.ai/normal#Chemist
+
+:Chemist rdf:type owl:Class ;
+         
+         rdfs:label "Chemist" ;
+         
+         rdfs:subClassOf :Provider .
+
+
+
+###  http://graffl.ai/normal#Church
+
+:Church rdf:type owl:Class ;
+        
+        rdfs:label "Church" ;
+        
+        rdfs:subClassOf :Religious_Group .
+
+
+
+###  http://graffl.ai/normal#City
+
+:City rdf:type owl:Class ;
+      
+      rdfs:label "City" ;
+      
+      rdfs:subClassOf :Geopolitical_Entity .
+
+
+
+###  http://graffl.ai/normal#Clinic
+
+:Clinic rdf:type owl:Class ;
+        
+        rdfs:label "Clinic" ;
+        
+        rdfs:subClassOf :Building .
+
+
+
+###  http://graffl.ai/normal#Clinical_Competency
+
+:Clinical_Competency rdf:type owl:Class ;
+                     
+                     rdfs:label "Clinical Competency" ;
+                     
+                     rdfs:subClassOf :Competency .
+
+
+
+###  http://graffl.ai/normal#Clinical_Evaluation
+
+:Clinical_Evaluation rdf:type owl:Class ;
+                     
+                     rdfs:label "Clinical Evaluation" ;
+                     
+                     rdfs:subClassOf :Evaluation .
+
+
+
+###  http://graffl.ai/normal#Clinical_Outcome
+
+:Clinical_Outcome rdf:type owl:Class ;
+                  
+                  rdfs:label "Clinical Outcome" ;
+                  
+                  rdfs:subClassOf :Outcome .
+
+
+
+###  http://graffl.ai/normal#Clinical_Outcome_Evaluation
+
+:Clinical_Outcome_Evaluation rdf:type owl:Class ;
+                             
+                             rdfs:label "Clinical Outcome Evaluation" ;
+                             
+                             rdfs:subClassOf :Clinical_Evaluation ,
+                                             :Clinical_Outcome ,
+                                             :Outcome_Evaluation .
+
+
+
+###  http://graffl.ai/normal#Clinical_Training
+
+:Clinical_Training rdf:type owl:Class ;
+                   
+                   rdfs:label "Clinical Training" ;
+                   
+                   rdfs:subClassOf :Health_Care_Education ,
+                                   :Training ;
+                   
+                   rdfs:seeAlso "clinical course" ,
+                                "Advanced Clinical Training" .
+
+
+
+###  http://graffl.ai/normal#Closure
+
+:Closure rdf:type owl:Class ;
+         
+         rdfs:label "Closure" ;
+         
+         rdfs:subClassOf :Event ;
+         
+         rdfs:seeAlso "set to close" .
+
+
+
+###  http://graffl.ai/normal#College
+
+:College rdf:type owl:Class ;
+         
+         rdfs:label "College" ;
+         
+         rdfs:subClassOf :School .
+
+
+
+###  http://graffl.ai/normal#Company
+
+:Company rdf:type owl:Class ;
+         
+         rdfs:label "Company" ;
+         
+         rdfs:subClassOf :Organization .
+
+
+
+###  http://graffl.ai/normal#Competency
+
+:Competency rdf:type owl:Class ;
+            
+            rdfs:label "Competency" ;
+            
+            rdfs:subClassOf :Quality .
+
+
+
+###  http://graffl.ai/normal#Condition
+
+:Condition rdf:type owl:Class ;
+           
+           rdfs:label """Condition
+""" ;
+           
+           owl:backwardCompatibleWith "COND"^^:grafflNER ;
+           
+           rdfs:comment "as in \"State\" or \"State of Being\" or \"State of Being in a Certain Condition\"" .
+
+
+
+###  http://graffl.ai/normal#Continent
+
+:Continent rdf:type owl:Class ;
+           
+           rdfs:label "Continent" ;
+           
+           rdfs:subClassOf :Location .
+
+
+
+###  http://graffl.ai/normal#Continuous_Learning
+
+:Continuous_Learning rdf:type owl:Class ;
+                     
+                     rdfs:label "Continuous Learning" ;
+                     
+                     rdfs:subClassOf :Learning ;
+                     
+                     rdfs:seeAlso "continued learning" .
+
+
+
+###  http://graffl.ai/normal#Country
+
+:Country rdf:type owl:Class ;
+         
+         rdfs:label "Country" ;
+         
+         rdfs:subClassOf :Geopolitical_Entity .
+
+
+
+###  http://graffl.ai/normal#Course
+
+:Course rdf:type owl:Class ;
+        
+        rdfs:label "Course" ;
+        
+        rdfs:subClassOf :Training_Event .
+
+
+
+###  http://graffl.ai/normal#Date
+
+:Date rdf:type owl:Class ;
+      
+      rdfs:label "Date" ;
+      
+      owl:backwardCompatibleWith "DATE"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Delta
+
+:Delta rdf:type owl:Class ;
+       
+       rdfs:label "Delta" ;
+       
+       rdfs:subClassOf :Greek .
+
+
+
+###  http://graffl.ai/normal#Department
+
+:Department rdf:type owl:Class ;
+            
+            rdfs:label "Department" ;
+            
+            rdfs:subClassOf :Building .
+
+
+
+###  http://graffl.ai/normal#Development
+
+:Development rdf:type owl:Class ;
+             
+             rdfs:label "Development" ;
+             
+             rdfs:subClassOf :Education .
+
+
+
+###  http://graffl.ai/normal#Digamma
+
+:Digamma rdf:type owl:Class ;
+         
+         rdfs:label "Digamma" ;
+         
+         rdfs:subClassOf :Greek ;
+         
+         :implies :Eta .
+
+
+
+###  http://graffl.ai/normal#Diploma
+
+:Diploma rdf:type owl:Class ;
+         
+         rdfs:label "Diploma" ;
+         
+         rdfs:subClassOf :Artifact ;
+         
+         owl:backwardCompatibleWith "DIPLOMA"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Doctoral_Degree
+
+:Doctoral_Degree rdf:type owl:Class ;
+                 
+                 rdfs:label "Doctoral Degree" ;
+                 
+                 rdfs:subClassOf :Diploma ;
+                 
+                 rdfs:seeAlso "doctoral degree program" ,
+                              "doctoral" ,
+                              "phd" .
+
+
+
+###  http://graffl.ai/normal#Education
+
+:Education rdf:type owl:Class ;
+           
+           rdfs:label "Education" ;
+           
+           owl:backwardCompatibleWith "EDU"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Educator
+
+:Educator rdf:type owl:Class ;
+          
+          rdfs:label "Educator" ;
+          
+          rdfs:subClassOf :Provider .
+
+
+
+###  http://graffl.ai/normal#Elapsed_Time
+
+:Elapsed_Time rdf:type owl:Class ;
+              
+              rdfs:label "Elapsed Time" ;
+              
+              rdfs:subClassOf :Time ;
+              
+              rdfs:seeAlso "Duration" .
+
+
+
+###  http://graffl.ai/normal#Elderly_Patient
+
+:Elderly_Patient rdf:type owl:Class ;
+                 
+                 rdfs:label "Elderly Patient" ;
+                 
+                 rdfs:subClassOf :Patient .
+
+
+
+###  http://graffl.ai/normal#Emergency_Room
+
+:Emergency_Room rdf:type owl:Class ;
+                
+                rdfs:label "Emergency Room" ;
+                
+                rdfs:subClassOf :Room ;
+                
+                rdfs:seeAlso "ER" .
+
+
+
+###  http://graffl.ai/normal#Empathy
+
+:Empathy rdf:type owl:Class ;
+         
+         rdfs:label "Empathy" ;
+         
+         rdfs:subClassOf :Soft_Skill .
+
+
+
+###  http://graffl.ai/normal#Epsilon
+
+:Epsilon rdf:type owl:Class ;
+         
+         rdfs:subClassOf :Greek ;
+         
+         :requires "Epsilon" ;
+         
+         :implies :Beta .
+
+
+
+###  http://graffl.ai/normal#Eta
+
+:Eta rdf:type owl:Class ;
+     
+     rdfs:label "Eta" ;
+     
+     rdfs:subClassOf :Greek .
+
+
+
+###  http://graffl.ai/normal#Ethical_Practice
+
+:Ethical_Practice rdf:type owl:Class ;
+                  
+                  rdfs:label "Ethical Practice" ;
+                  
+                  rdfs:subClassOf :Practice ;
+                  
+                  rdfs:seeAlso "code for ethical practice" .
+
+
+
+###  http://graffl.ai/normal#Europe
+
+:Europe rdf:type owl:Class ;
+        
+        rdfs:label "Europe" ;
+        
+        rdfs:subClassOf :Continent .
+
+
+
+###  http://graffl.ai/normal#Evaluation
+
+:Evaluation rdf:type owl:Class ;
+            
+            rdfs:label "Evaluation" ;
+            
+            rdfs:subClassOf :Event ;
+            
+            owl:backwardCompatibleWith "EVAL"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Event
+
+:Event rdf:type owl:Class ;
+       
+       rdfs:label "Event" ;
+       
+       owl:backwardCompatibleWith "EVENT"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Facility_Closure
+
+:Facility_Closure rdf:type owl:Class ;
+                  
+                  rdfs:label "Facility Closure" ;
+                  
+                  rdfs:subClassOf :Closure ;
+                  
+                  :requires :Building .
+
+
+
+###  http://graffl.ai/normal#Fail_to_Rescue_Rate
+
+:Fail_to_Rescue_Rate rdf:type owl:Class ;
+                     
+                     rdfs:label "Fail to Rescue Rate" ;
+                     
+                     rdfs:subClassOf :Quantifiable_Measurement ;
+                     
+                     rdfs:seeAlso "failure-to-rescue rates" .
+
+
+
+###  http://graffl.ai/normal#Fair_Pay
+
+:Fair_Pay rdf:type owl:Class ;
+          
+          rdfs:label "Fair Pay" ;
+          
+          rdfs:subClassOf :Pay ;
+          
+          :nluComment "the issue of fair pay" ;
+          
+          :effects :Strike .
+
+
+
+###  http://graffl.ai/normal#Family_Nurse_Practitioner
+
+:Family_Nurse_Practitioner rdf:type owl:Class ;
+                           
+                           rdfs:label "Family Nurse Practitioner" ;
+                           
+                           rdfs:subClassOf :Nurse_Practitioner ;
+                           
+                           rdfs:seeAlso "FNP" .
+
+
+
+###  http://graffl.ai/normal#Female_Patient
+
+:Female_Patient rdf:type owl:Class ;
+                
+                rdfs:label "Female Patient" ;
+                
+                rdfs:subClassOf :Patient .
+
+
+
+###  http://graffl.ai/normal#Florence_Nightingale
+
+:Florence_Nightingale rdf:type owl:Class ;
+                      
+                      rdfs:label "Florence Nightingale" ;
+                      
+                      rdfs:subClassOf :Person .
+
+
+
+###  http://graffl.ai/normal#Gamma
+
+:Gamma rdf:type owl:Class ;
+       
+       rdfs:label "Gamma" ;
+       
+       rdfs:subClassOf :Greek ;
+       
+       :requires :Delta .
+
+
+
+###  http://graffl.ai/normal#Gender_Bias
+
+:Gender_Bias rdf:type owl:Class ;
+             
+             rdfs:label "Gender Bias" ;
+             
+             rdfs:subClassOf :Bias .
+
+
+
+###  http://graffl.ai/normal#Geopolitical_Entity
+
+:Geopolitical_Entity rdf:type owl:Class ;
+                     
+                     rdfs:label "Geopolitical Entity" ;
+                     
+                     owl:backwardCompatibleWith "GEO"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Greek
+
+:Greek rdf:type owl:Class ;
+       
+       rdfs:label "Greek" .
+
+
+
+###  http://graffl.ai/normal#Group
+
+:Group rdf:type owl:Class ;
+       
+       rdfs:label "Group" ;
+       
+       rdfs:subClassOf :Agent ;
+       
+       owl:backwardCompatibleWith "GROUP"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Health
+
+:Health rdf:type owl:Class ;
+        
+        rdfs:label "Health" ;
+        
+        rdfs:subClassOf :Condition .
+
+
+
+###  http://graffl.ai/normal#Health_Care
+
+:Health_Care rdf:type owl:Class ;
+             
+             rdfs:label "Health Care" ;
+             
+             rdfs:subClassOf :Care_Event .
+
+
+
+###  http://graffl.ai/normal#Health_Care_Education
+
+:Health_Care_Education rdf:type owl:Class ;
+                       
+                       rdfs:label "Health Care Education" ;
+                       
+                       rdfs:subClassOf :Education .
+
+
+
+###  http://graffl.ai/normal#Health_Care_Provider
+
+:Health_Care_Provider rdf:type owl:Class ;
+                      
+                      rdfs:label "Health Care Provider" ;
+                      
+                      rdfs:subClassOf :Provider .
+
+
+
+###  http://graffl.ai/normal#Health_Care_Quality
+
+:Health_Care_Quality rdf:type owl:Class ;
+                     
+                     rdfs:label "Health Care Quality" ;
+                     
+                     rdfs:subClassOf :Quality .
+
+
+
+###  http://graffl.ai/normal#Health_Care_Reform
+
+:Health_Care_Reform rdf:type owl:Class ;
+                    
+                    rdfs:label "Health Care Reform" ;
+                    
+                    rdfs:subClassOf :Reform .
+
+
+
+###  http://graffl.ai/normal#Health_Care_Specialist
+
+:Health_Care_Specialist rdf:type owl:Class ;
+                        
+                        rdfs:label "Health Care Specialist" ;
+                        
+                        rdfs:subClassOf :Specialist ;
+                        
+                        rdfs:seeAlso "Health Care Provider" .
+
+
+
+###  http://graffl.ai/normal#Health_Department
+
+:Health_Department rdf:type owl:Class ;
+                   
+                   rdfs:label "Health Department" ;
+                   
+                   rdfs:subClassOf :Department .
+
+
+
+###  http://graffl.ai/normal#Historical_Nursing
+
+:Historical_Nursing rdf:type owl:Class ;
+                    
+                    rdfs:label "Historical Nursing" ;
+                    
+                    rdfs:subClassOf :Nursing .
+
+
+
+###  http://graffl.ai/normal#History
+
+:History rdf:type owl:Class ;
+         
+         rdfs:label "History" ;
+         
+         rdfs:subClassOf :Event .
+
+
+
+###  http://graffl.ai/normal#Home
+
+:Home rdf:type owl:Class ;
+      
+      rdfs:label "Home" ;
+      
+      rdfs:subClassOf :Building .
+
+
+
+###  http://graffl.ai/normal#Hospital
+
+:Hospital rdf:type owl:Class ;
+          
+          rdfs:label "Hospital" ;
+          
+          rdfs:subClassOf :Medical_Building .
+
+
+
+###  http://graffl.ai/normal#Increase
+
+:Increase rdf:type owl:Class ;
+          
+          rdfs:label "Increase" ;
+          
+          rdfs:seeAlso "doubled" ,
+                       "tripled,quadrupled" .
+
+
+
+###  http://graffl.ai/normal#Johnson_and_Johnson
+
+:Johnson_and_Johnson rdf:type owl:Class ;
+                     
+                     rdfs:label "Johnson & Johnson" ;
+                     
+                     rdfs:subClassOf :Company ;
+                     
+                     rdfs:seeAlso "J&J" ,
+                                  "Johnson and Johnson" .
+
+
+
+###  http://graffl.ai/normal#Labor_Event
+
+:Labor_Event rdf:type owl:Class ;
+             
+             rdfs:label "Labor Event" ;
+             
+             rdfs:subClassOf :Event .
+
+
+
+###  http://graffl.ai/normal#Language
+
+:Language rdf:type owl:Class ;
+          
+          rdfs:label "Language" ;
+          
+          owl:backwardCompatibleWith "LANGUAGE"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Learning
+
+:Learning rdf:type owl:Class ;
+          
+          rdfs:label "Learning" ;
+          
+          rdfs:subClassOf :Education .
+
+
+
+###  http://graffl.ai/normal#Location
+
+:Location rdf:type owl:Class ;
+          
+          rdfs:label "Location" ;
+          
+          owl:backwardCompatibleWith "LOC"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Long_Term_Health_Care
+
+:Long_Term_Health_Care rdf:type owl:Class ;
+                       
+                       rdfs:label "Long Term Health Care" ;
+                       
+                       rdfs:subClassOf :Health_Care ;
+                       
+                       rdfs:seeAlso "long-term health care" .
+
+
+
+###  http://graffl.ai/normal#Male_Patient
+
+:Male_Patient rdf:type owl:Class ;
+              
+              rdfs:label "Male Patient" ;
+              
+              rdfs:subClassOf :Patient .
+
+
+
+###  http://graffl.ai/normal#Master_of_Arts
+
+:Master_of_Arts rdf:type owl:Class ;
+                
+                rdfs:label "Master of Arts" ;
+                
+                rdfs:subClassOf :Masters_Degree .
+
+
+
+###  http://graffl.ai/normal#Master_of_Science
+
+:Master_of_Science rdf:type owl:Class ;
+                   
+                   rdfs:label "Master of Science" ;
+                   
+                   rdfs:subClassOf :Masters_Degree ;
+                   
+                   rdfs:seeAlso "MSc" .
+
+
+
+###  http://graffl.ai/normal#Master_of_Science_in_Nursing
+
+:Master_of_Science_in_Nursing rdf:type owl:Class ;
+                              
+                              rdfs:label "Master of Science in Nursing" ;
+                              
+                              rdfs:subClassOf :Master_of_Science ,
+                                              :Nursing_Diploma ;
+                              
+                              rdfs:seeAlso "MSN"^^:caseSensitive ;
+                              
+                              :implies :Bachelor_of_Science_in_Nursing .
+
+
+
+###  http://graffl.ai/normal#Masters_Degree
+
+:Masters_Degree rdf:type owl:Class ;
+                
+                rdfs:label "Master's Degree" ;
+                
+                rdfs:subClassOf :Diploma ;
+                
+                rdfs:seeAlso "master's" ,
+                             "Master Degree" .
+
+
+
+###  http://graffl.ai/normal#Medical_Building
+
+:Medical_Building rdf:type owl:Class ;
+                  
+                  rdfs:label "Medical Building" ;
+                  
+                  rdfs:subClassOf :Building .
+
+
+
+###  http://graffl.ai/normal#Medical_Facility_Closure
+
+:Medical_Facility_Closure rdf:type owl:Class ;
+                          
+                          rdfs:label "Medical Facility Closure" ;
+                          
+                          rdfs:subClassOf :Facility_Closure ;
+                          
+                          :nluComment "the closure of a medical facility building" ;
+                          
+                          :requires :Medical_Building .
+
+
+
+###  http://graffl.ai/normal#Mental_Health
+
+:Mental_Health rdf:type owl:Class ;
+               
+               rdfs:label "Mental Health" ;
+               
+               rdfs:subClassOf :Health .
+
+
+
+###  http://graffl.ai/normal#Modern_Nursing
+
+:Modern_Nursing rdf:type owl:Class ;
+                
+                rdfs:label "Modern Nursing" ;
+                
+                rdfs:subClassOf :Nursing .
+
+
+
+###  http://graffl.ai/normal#Money
+
+:Money rdf:type owl:Class ;
+       
+       rdfs:label "Money" ;
+       
+       owl:backwardCompatibleWith "MONEY"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Mortality_Rate
+
+:Mortality_Rate rdf:type owl:Class ;
+                
+                rdfs:label "Mortality Rate" ;
+                
+                rdfs:subClassOf :Quantifiable_Measurement .
+
+
+
+###  http://graffl.ai/normal#National_Certification
+
+:National_Certification rdf:type owl:Class ;
+                        
+                        rdfs:label "National Certification" ;
+                        
+                        rdfs:subClassOf :Certification .
+
+
+
+###  http://graffl.ai/normal#Nationality
+
+:Nationality rdf:type owl:Class ;
+             
+             rdfs:label "Nationality" ;
+             
+             owl:backwardCompatibleWith "NORP"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Nurse
+
+:Nurse rdf:type owl:Class ;
+       
+       rdfs:label "Nurse" ;
+       
+       rdfs:subClassOf :Health_Care_Specialist ;
+       
+       :worksIn :Hospital ;
+       
+       :requires :Nursing_Diploma .
+
+
+
+###  http://graffl.ai/normal#Nurse_Educator
+
+:Nurse_Educator rdf:type owl:Class ;
+                
+                rdfs:label "Nurse Educator" ;
+                
+                rdfs:subClassOf :Educator ;
+                
+                :worksIn :Nursing_School .
+
+
+
+###  http://graffl.ai/normal#Nurse_Practitioner
+
+:Nurse_Practitioner rdf:type owl:Class ;
+                    
+                    rdfs:label "Nurse Practitioner" ;
+                    
+                    rdfs:subClassOf :Advanced_Practice_Registered_Nurse ;
+                    
+                    rdfs:seeAlso "NPs" ,
+                                 "NP" ;
+                    
+                    rdfs:isDefinedBy "https://onlinedegrees.und.edu/blog/nurse-practitioner-vs-rn/" .
+
+
+
+###  http://graffl.ai/normal#Nursing
+
+:Nursing rdf:type owl:Class ;
+         
+         rdfs:label "Nursing" ;
+         
+         rdfs:subClassOf :Profession .
+
+
+
+###  http://graffl.ai/normal#Nursing_Diploma
+
+:Nursing_Diploma rdf:type owl:Class ;
+                 
+                 rdfs:label "Nursing Diploma" ;
+                 
+                 rdfs:subClassOf :Diploma ;
+                 
+                 :requires :Nursing_Education .
+
+
+
+###  http://graffl.ai/normal#Nursing_Education
+
+:Nursing_Education rdf:type owl:Class ;
+                   
+                   rdfs:label "Nursing Education" ;
+                   
+                   rdfs:subClassOf :Health_Care_Education .
+
+
+
+###  http://graffl.ai/normal#Nursing_Home
+
+:Nursing_Home rdf:type owl:Class ;
+              
+              rdfs:label "Nursing Home" ;
+              
+              rdfs:subClassOf :Home .
+
+
+
+###  http://graffl.ai/normal#Nursing_School
+
+:Nursing_School rdf:type owl:Class ;
+                
+                rdfs:label "Nursing School" ;
+                
+                rdfs:subClassOf :School ;
+                
+                :requires :Nurse_Educator ;
+                
+                :implies :Nurse_Educator ;
+                
+                :meansOf :Nursing_Education .
+
+
+
+###  http://graffl.ai/normal#Nursing_Student
+
+:Nursing_Student rdf:type owl:Class ;
+                 
+                 rdfs:label "Nursing Student" ;
+                 
+                 rdfs:subClassOf :Student .
+
+
+
+###  http://graffl.ai/normal#Ordinal
+
+:Ordinal rdf:type owl:Class ;
+         
+         rdfs:label "Ordinal" ;
+         
+         owl:backwardCompatibleWith "ORDINAL"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Organization
+
+:Organization rdf:type owl:Class ;
+              
+              rdfs:label "Organization" ;
+              
+              owl:backwardCompatibleWith "ORG"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Outcome
+
+:Outcome rdf:type owl:Class ;
+         
+         rdfs:label "Outcome" ;
+         
+         rdfs:subClassOf :Event .
+
+
+
+###  http://graffl.ai/normal#Outcome_Evaluation
+
+:Outcome_Evaluation rdf:type owl:Class ;
+                    
+                    rdfs:label "Outcome Evaluation" ;
+                    
+                    rdfs:subClassOf :Evaluation .
+
+
+
+###  http://graffl.ai/normal#Patient
+
+:Patient rdf:type owl:Class ;
+         
+         rdfs:label "Patient" ;
+         
+         rdfs:subClassOf :Receiver .
+
+
+
+###  http://graffl.ai/normal#Patient_Care
+
+:Patient_Care rdf:type owl:Class ;
+              
+              rdfs:label "Patient Care" ;
+              
+              rdfs:subClassOf :Health_Care ;
+              
+              rdfs:seeAlso "Patient Care Coordination" ;
+              
+              :requires :Health_Care_Specialist ,
+                        :Patient .
+
+
+
+###  http://graffl.ai/normal#Patient_Treatment
+
+:Patient_Treatment rdf:type owl:Class ;
+                   
+                   rdfs:label "Patient Treatment" ;
+                   
+                   rdfs:subClassOf :Treatment_Event ;
+                   
+                   :meansOf :Patient_Treatment_Plan .
+
+
+
+###  http://graffl.ai/normal#Patient_Treatment_Plan
+
+:Patient_Treatment_Plan rdf:type owl:Class ;
+                        
+                        rdfs:label "Patient Treatment Plan" ;
+                        
+                        rdfs:subClassOf :Plan .
+
+
+
+###  http://graffl.ai/normal#Pay
+
+:Pay rdf:type owl:Class ;
+     
+     rdfs:label "Pay" ;
+     
+     rdfs:subClassOf :Event ;
+     
+     rdfs:seeAlso "Salary" .
+
+
+
+###  http://graffl.ai/normal#Pediactric_Patient
+
+:Pediactric_Patient rdf:type owl:Class ;
+                    
+                    rdfs:label "Pediactric Patient" ;
+                    
+                    rdfs:subClassOf :Patient .
+
+
+
+###  http://graffl.ai/normal#Peer_Review
+
+:Peer_Review rdf:type owl:Class ;
+             
+             rdfs:label "Peer Review" ;
+             
+             rdfs:subClassOf :Evaluation ;
+             
+             rdfs:seeAlso "Periodic Peer Review" .
+
+
+
+###  http://graffl.ai/normal#Percent
+
+:Percent rdf:type owl:Class ;
+         
+         rdfs:label "Percent" ;
+         
+         owl:backwardCompatibleWith "PERCENT"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Permanent
+
+:Permanent rdf:type owl:Class ;
+           
+           rdfs:label "Permanent" ;
+           
+           rdfs:subClassOf :Elapsed_Time ;
+           
+           owl:disjointWith :Temporary .
+
+
+
+###  http://graffl.ai/normal#Person
+
+:Person rdf:type owl:Class ;
+        
+        rdfs:label "Person" ;
+        
+        rdfs:subClassOf :Agent ;
+        
+        owl:backwardCompatibleWith "PERSON"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Personal_Touch
+
+:Personal_Touch rdf:type owl:Class ;
+                
+                rdfs:label "Personal Touch" ;
+                
+                rdfs:subClassOf :Soft_Skill .
+
+
+
+###  http://graffl.ai/normal#Pharmacist
+
+:Pharmacist rdf:type owl:Class ;
+            
+            rdfs:label "Pharmacist" ;
+            
+            rdfs:subClassOf :Health_Care_Specialist ;
+            
+            :worksIn :Pharmacy .
+
+
+
+###  http://graffl.ai/normal#Pharmacy
+
+:Pharmacy rdf:type owl:Class ;
+          
+          rdfs:label "Pharmacy" ;
+          
+          rdfs:subClassOf :Medical_Building .
+
+
+
+###  http://graffl.ai/normal#Physician
+
+:Physician rdf:type owl:Class ;
+           
+           rdfs:label "Physician" ;
+           
+           rdfs:subClassOf :Health_Care_Specialist ;
+           
+           :worksIn :Hospital .
+
+
+
+###  http://graffl.ai/normal#Plan
+
+:Plan rdf:type owl:Class ;
+      
+      rdfs:label """Plan
+""" ;
+      
+      rdfs:subClassOf :Artifact .
+
+
+
+###  http://graffl.ai/normal#Political_Activity
+
+:Political_Activity rdf:type owl:Class ;
+                    
+                    rdfs:label "Political Activity" ;
+                    
+                    rdfs:subClassOf :Activity .
+
+
+
+###  http://graffl.ai/normal#Political_Group
+
+:Political_Group rdf:type owl:Class ;
+                 
+                 rdfs:label "Political Group" ;
+                 
+                 rdfs:subClassOf :Group ;
+                 
+                 owl:backwardCompatibleWith "NORP"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Practice
+
+:Practice rdf:type owl:Class ;
+          
+          rdfs:label "Practice" ;
+          
+          rdfs:subClassOf :Activity .
+
+
+
+###  http://graffl.ai/normal#Primary_Care
+
+:Primary_Care rdf:type owl:Class ;
+              
+              rdfs:label "Primary Care" ;
+              
+              rdfs:subClassOf :Health_Care .
+
+
+
+###  http://graffl.ai/normal#Product
+
+:Product rdf:type owl:Class ;
+         
+         rdfs:label "Product" ;
+         
+         owl:backwardCompatibleWith "PRODUCT"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Profession
+
+:Profession rdf:type owl:Class ;
+            
+            rdfs:label "Profession" ;
+            
+            owl:backwardCompatibleWith "PROFESSION"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Professional_Development
+
+:Professional_Development rdf:type owl:Class ;
+                          
+                          rdfs:label "Professional Development" ;
+                          
+                          rdfs:subClassOf :Development .
+
+
+
+###  http://graffl.ai/normal#Protestant_Church
+
+:Protestant_Church rdf:type owl:Class ;
+                   
+                   rdfs:label "Protestant Church" ;
+                   
+                   rdfs:subClassOf :Church .
+
+
+
+###  http://graffl.ai/normal#Provider
+
+:Provider rdf:type owl:Class ;
+          
+          rdfs:label "Provider" ;
+          
+          rdfs:subClassOf :Agent .
+
+
+
+###  http://graffl.ai/normal#Psychiatric_Mental_Health_Nurse_Practitioner
+
+:Psychiatric_Mental_Health_Nurse_Practitioner rdf:type owl:Class ;
+                                              
+                                              rdfs:label "Psychiatric Mental Health Nurse Practitioner" ;
+                                              
+                                              rdfs:subClassOf :Nurse_Practitioner ;
+                                              
+                                              rdfs:seeAlso "PMHNP" .
+
+
+
+###  http://graffl.ai/normal#Public_Health_Department
+
+:Public_Health_Department rdf:type owl:Class ;
+                          
+                          rdfs:label "Public Health Department" ;
+                          
+                          rdfs:subClassOf :Health_Department .
+
+
+
+###  http://graffl.ai/normal#Quality
+
+:Quality rdf:type owl:Class ;
+         
+         rdfs:label "Quality" ;
+         
+         rdfs:subClassOf :Event ;
+         
+         owl:backwardCompatibleWith "QUALITY"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Quantifiable_Measurement
+
+:Quantifiable_Measurement rdf:type owl:Class ;
+                          
+                          rdfs:label "Quantifiable Measurement" ;
+                          
+                          rdfs:subClassOf :Quantity ;
+                          
+                          owl:backwardCompatibleWith "MEASURE"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Quantity
+
+:Quantity rdf:type owl:Class ;
+          
+          rdfs:label "Quantity" ;
+          
+          owl:backwardCompatibleWith "QUANTITY"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Racial_Bias
+
+:Racial_Bias rdf:type owl:Class ;
+             
+             rdfs:label "Racial Bias" ;
+             
+             rdfs:subClassOf :Bias ;
+             
+             rdfs:seeAlso "Race Bias" .
+
+
+
+###  http://graffl.ai/normal#Readmission
+
+:Readmission rdf:type owl:Class ;
+             
+             rdfs:label "Readmission" ;
+             
+             rdfs:subClassOf :Admission .
+
+
+
+###  http://graffl.ai/normal#Readmission_Rate
+
+:Readmission_Rate rdf:type owl:Class ;
+                  
+                  rdfs:label "Readmission Rate" ;
+                  
+                  rdfs:subClassOf :Quantifiable_Measurement ;
+                  
+                  :measures :Readmission .
+
+
+
+###  http://graffl.ai/normal#Receiver
+
+:Receiver rdf:type owl:Class ;
+          
+          rdfs:label "Receiver" ;
+          
+          rdfs:subClassOf :Agent .
+
+
+
+###  http://graffl.ai/normal#Reform
+
+:Reform rdf:type owl:Class ;
+        
+        rdfs:label "Reform" ;
+        
+        rdfs:subClassOf :Event ;
+        
+        rdfs:seeAlso "Reformation" .
+
+
+
+###  http://graffl.ai/normal#Registered_Nurse
+
+:Registered_Nurse rdf:type owl:Class ;
+                  
+                  rdfs:label "Registered Nurse" ;
+                  
+                  rdfs:subClassOf :Nurse ;
+                  
+                  rdfs:seeAlso "RN"^^:caseSensitive ,
+                               "RNs"^^:caseSensitive ,
+                               "Registered Nurse" .
+
+
+
+###  http://graffl.ai/normal#Regulation
+
+:Regulation rdf:type owl:Class ;
+            
+            rdfs:label "Regulation" ;
+            
+            rdfs:subClassOf :Artifact ;
+            
+            owl:backwardCompatibleWith "REG"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Religious_Group
+
+:Religious_Group rdf:type owl:Class ;
+                 
+                 rdfs:label "Religious Group" ;
+                 
+                 rdfs:subClassOf :Group ;
+                 
+                 owl:backwardCompatibleWith "NORP"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Room
+
+:Room rdf:type owl:Class ;
+      
+      rdfs:label "Room" ;
+      
+      rdfs:subClassOf :Building .
+
+
+
+###  http://graffl.ai/normal#Rule
+
+:Rule rdf:type owl:Class ;
+      
+      rdfs:label """Rule
+""" ;
+      
+      rdfs:subClassOf :Artifact ;
+      
+      owl:backwardCompatibleWith "RULE"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#School
+
+:School rdf:type owl:Class ;
+        
+        rdfs:label "School" ;
+        
+        rdfs:subClassOf :Building .
+
+
+
+###  http://graffl.ai/normal#SeeAlsoTestCase
+
+:SeeAlsoTestCase rdf:type owl:Class ;
+                 
+                 rdfs:label "SeeAlsoTestCase" ;
+                 
+                 rdfs:seeAlso "SeeAlso4" ,
+                              "SeeAlso1, SeeAlso2,     SeeAlso3" ,
+                              "SeeAlso5" .
+
+
+
+###  http://graffl.ai/normal#Shortage
+
+:Shortage rdf:type owl:Class ;
+          
+          rdfs:label "Shortage" ;
+          
+          rdfs:subClassOf :Event .
+
+
+
+###  http://graffl.ai/normal#Site
+
+:Site rdf:type owl:Class ;
+      
+      rdfs:label "Site" ;
+      
+      rdfs:subClassOf :Building .
+
+
+
+###  http://graffl.ai/normal#Skill
+
+:Skill rdf:type owl:Class ;
+       
+       rdfs:label "Skill" ;
+       
+       owl:backwardCompatibleWith "SKILL"^^:grafflNER .
+
+
+
+###  http://graffl.ai/normal#Soft_Skill
+
+:Soft_Skill rdf:type owl:Class ;
+            
+            rdfs:label "Soft Skill" ;
+            
+            rdfs:subClassOf :Skill .
+
+
+
+###  http://graffl.ai/normal#Spain
+
+:Spain rdf:type owl:Class ;
+       
+       rdfs:label "Spain" ;
+       
+       rdfs:subClassOf :Country .
+
+
+
+###  http://graffl.ai/normal#Spanish
+
+:Spanish rdf:type owl:Class ;
+         
+         rdfs:label "Spanish"^^:spacyNER ;
+         
+         rdfs:subClassOf :Nationality .
+
+
+
+###  http://graffl.ai/normal#Spanish_Hospital
+
+:Spanish_Hospital rdf:type owl:Class ;
+                  
+                  rdfs:label "Spanish Hospital" ;
+                  
+                  rdfs:subClassOf :Hospital ;
+                  
+                  :locatedIn :Spain .
+
+
+
+###  http://graffl.ai/normal#Specialist
+
+:Specialist rdf:type owl:Class ;
+            
+            rdfs:label "Specialist" ;
+            
+            rdfs:subClassOf :Provider .
+
+
+
+###  http://graffl.ai/normal#Staff
+
+:Staff rdf:type owl:Class ;
+       
+       rdfs:label "Staff" ;
+       
+       rdfs:subClassOf :Provider .
+
+
+
+###  http://graffl.ai/normal#Staffing
+
+:Staffing rdf:type owl:Class ;
+          
+          rdfs:label "Staffing" ;
+          
+          rdfs:subClassOf :Event ;
+          
+          :implies :Staff .
+
+
+
+###  http://graffl.ai/normal#Staffing_Level
+
+:Staffing_Level rdf:type owl:Class ;
+                
+                rdfs:label "Staffing Level" ;
+                
+                rdfs:subClassOf :Quantifiable_Measurement ;
+                
+                :measures :Staffing .
+
+
+
+###  http://graffl.ai/normal#Staffing_Shortage
+
+:Staffing_Shortage rdf:type owl:Class ;
+                   
+                   rdfs:label "Staffing Shortage" ;
+                   
+                   rdfs:subClassOf :Shortage ,
+                                   :Staffing .
+
+
+
+###  http://graffl.ai/normal#Strike
+
+:Strike rdf:type owl:Class ;
+        
+        rdfs:label "Strike" ;
+        
+        rdfs:subClassOf :Labor_Event ;
+        
+        :nluComment "a worker's strike" ;
+        
+        :effects :Facility_Closure .
+
+
+
+###  http://graffl.ai/normal#Student
+
+:Student rdf:type owl:Class ;
+         
+         rdfs:label "Student" ;
+         
+         rdfs:subClassOf :Receiver .
+
+
+
+###  http://graffl.ai/normal#Surgeon
+
+:Surgeon rdf:type owl:Class ;
+         
+         rdfs:label "Surgeon" ;
+         
+         rdfs:subClassOf :Provider ;
+         
+         :worksIn :Surgery .
+
+
+
+###  http://graffl.ai/normal#Surgery
+
+:Surgery rdf:type owl:Class ;
+         
+         rdfs:label "Surgery" ;
+         
+         rdfs:subClassOf :Medical_Building .
+
+
+
+###  http://graffl.ai/normal#Temporary
+
+:Temporary rdf:type owl:Class ;
+           
+           rdfs:label "Temporary" ;
+           
+           rdfs:subClassOf :Elapsed_Time ;
+           
+           rdfs:seeAlso "Temporarily" .
+
+
+
+###  http://graffl.ai/normal#Theta
+
+:Theta rdf:type owl:Class ;
+       
+       rdfs:label "Theta" ;
+       
+       rdfs:subClassOf :Greek ;
+       
+       :similarTo :Alpha .
+
+
+
+###  http://graffl.ai/normal#Time
+
+:Time rdf:type owl:Class ;
+      
+      rdfs:label "Time" ;
+      
+      owl:backwardCompatibleWith "TIME"^^:spacyNER .
+
+
+
+###  http://graffl.ai/normal#Training
+
+:Training rdf:type owl:Class ;
+          
+          rdfs:label "Training" ;
+          
+          rdfs:subClassOf :Education .
+
+
+
+###  http://graffl.ai/normal#Training_Event
+
+:Training_Event rdf:type owl:Class ;
+                
+                rdfs:label "Training Event" ;
+                
+                rdfs:subClassOf :Event .
+
+
+
+###  http://graffl.ai/normal#Treatment_Event
+
+:Treatment_Event rdf:type owl:Class ;
+                 
+                 rdfs:label "Treatment Event" ;
+                 
+                 rdfs:subClassOf :Event .
+
+
+
+###  http://graffl.ai/normal#Urgent_Care
+
+:Urgent_Care rdf:type owl:Class ;
+             
+             rdfs:label "Urgent Care" ;
+             
+             rdfs:subClassOf :Medical_Building ;
+             
+             rdfs:seeAlso "Urgent Care Site" ,
+                          "Urgent Care Clinic" .
+
+
+
+###  http://graffl.ai/normal#Work_of_Art
+
+:Work_of_Art rdf:type owl:Class ;
+             
+             rdfs:label "Work of Art" ;
+             
+             owl:backwardCompatibleWith "WORK_OF_ART"^^:spacyNER .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

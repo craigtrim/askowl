@@ -2,7 +2,7 @@ import os
 from rdflib import Graph
 
 
-from askowl.svc import LoadOntologyModel
+from askowl.single.svc import LoadOntologyModel
 
 
 absolute_path = os.path.normpath(os.path.join(os.getcwd(), 'resources/tests'))

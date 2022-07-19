@@ -3,7 +3,7 @@
 import os
 
 
-from askowl.bp import AskOwlAPI
+from askowl.single.bp import AskOwlAPI
 
 
 # Path to Test OWL files

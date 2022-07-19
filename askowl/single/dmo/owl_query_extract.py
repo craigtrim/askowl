@@ -12,7 +12,7 @@ from collections import defaultdict
 
 from baseblock import BaseObject
 
-from askowl.dto import QueryResultType
+from askowl.single.dto import QueryResultType
 
 
 class OwlQueryExtract(BaseObject):

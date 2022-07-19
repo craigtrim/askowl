@@ -1,12 +1,7 @@
-from audioop import reverse
-from askowl import __version__
-
 import os
-from pprint import pprint
 
-from rdflib import Graph
 from baseblock import Enforcer
-from askowl.bp import AskOwlAPI
+from askowl.single.bp import AskOwlAPI
 
 
 # Path to Test OWL files

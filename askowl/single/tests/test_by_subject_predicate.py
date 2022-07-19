@@ -1,7 +1,7 @@
 import os
 
 from baseblock import Enforcer
-from askowl.bp import AskOwlAPI
+from askowl.single.bp import AskOwlAPI
 
 
 # Path to Test OWL files

@@ -9,8 +9,8 @@ from collections import defaultdict
 from baseblock import Stopwatch
 from baseblock import BaseObject
 
-from askowl.dmo import OwlQueryExtract
-from askowl.dto import QueryResultType
+from askowl.single.dmo import OwlQueryExtract
+from askowl.single.dto import QueryResultType
 
 
 class QueryOntologyModel(BaseObject):

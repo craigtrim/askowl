@@ -1,0 +1,72 @@
+---
+palletes:
+  Metro:
+    colors:
+      - d11141
+      - '00b159'
+      - '00aedb'
+      - f37735
+      - ffc425
+    url: https://www.color-hex.com/color-palette/700
+  Neon:
+    colors:
+      - fe0000
+      - fdfe02
+      - '0bff01'
+      - '011efe'
+      - fe00f6
+    url: https://www.color-hex.com/color-palette/1131
+  Retro:
+    colors:
+      - '666547'
+      - fb2e01
+      - 6fcb9f
+      - ffe28a
+      - fffeb3
+    url: https://www.color-hex.com/color-palette/165
+  Gryffindor:
+    colors:
+      - '740001'
+      - ae0001
+      - eeba30
+      - d3a625
+      #- '000000'
+    url: https://www.color-hex.com/color-palette/813
+  Bootstrap:
+    colors:
+      - d9534f
+      - f9f9f9
+      - 5bc0de
+      - 5cb85c
+      - 428bca
+    url: https://www.color-hex.com/color-palette/5452
+  Google:
+    colors:
+      - '008744'
+      - '0057e7'
+      - d62d20
+      - ffa700
+    url: https://www.color-hex.com/color-palette/1872
+  Pastel:
+    colors:
+      - 'e1f7d5'
+      - 'ffbdbd'
+      - c9c9ff
+      - f1cbff
+    url: https://www.color-hex.com/color-palette/764
+  ShadesOfTeal:
+    colors:
+      - 'b2d8d8'
+      - '66b2b2'
+      - 008080
+      - '006666'
+      - '004c4c'
+    url: https://www.color-hex.com/color-palette/4666
+  Instagram:
+    colors:
+      - feda75
+      - fa7e1e
+      - d62976
+      - 962fbf
+      - 4f5bd5
+    url: https://www.color-hex.com/color-palette/44340

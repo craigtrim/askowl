@@ -10,12 +10,12 @@ from rdflib.plugins.sparql.processor import SPARQLResult
 
 from baseblock import BaseObject
 
-from askowl.svc import LoadOntologyModel
-from askowl.svc import QueryOntologyModel
-from askowl.svc import GenerateViewTrie
-from askowl.svc import GenerateViewSpans
-from askowl.svc import GenerateViewSynonyms
-from askowl.dto import QueryResultType
+from askowl.single.svc import LoadOntologyModel
+from askowl.single.svc import QueryOntologyModel
+from askowl.single.svc import GenerateViewTrie
+from askowl.single.svc import GenerateViewSpans
+from askowl.single.svc import GenerateViewSynonyms
+from askowl.single.dto import QueryResultType
 
 
 class AskOwlAPI(BaseObject):
@@ -71,9 +71,6 @@ class AskOwlAPI(BaseObject):
                 f"\tAbsolute Path: {absolute_path}"]))
 
         raise ValueError
-
-    # def prefix(self) -> str:
-    #     return self._model_loader.prefix
 
     def adhoc(self,
               sparql_query: str,

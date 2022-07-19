@@ -2,7 +2,7 @@ import os
 from rdflib import Graph
 
 
-from askowl.dmo import OwlGraphConnector
+from askowl.single.dmo import OwlGraphConnector
 
 
 def test_component():

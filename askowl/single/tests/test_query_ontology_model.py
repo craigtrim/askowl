@@ -6,9 +6,9 @@ from random import sample
 from baseblock import Enforcer
 
 
-from askowl.svc import LoadOntologyModel
-from askowl.svc import QueryOntologyModel
-from askowl.dto import QueryResultType
+from askowl.single.svc import LoadOntologyModel
+from askowl.single.svc import QueryOntologyModel
+from askowl.single.dto import QueryResultType
 
 absolute_path = os.path.normpath(os.path.join(os.getcwd(), 'resources/tests'))
 

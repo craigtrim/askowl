@@ -7,7 +7,7 @@ from rdflib import Graph
 from baseblock import BaseObject
 
 
-from askowl.dmo import OwlGraphConnector
+from askowl.single.dmo import OwlGraphConnector
 
 
 class LoadOntologyModel(BaseObject):
